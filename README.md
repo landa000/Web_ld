@@ -30,3 +30,37 @@
 3. 우체국에 간다.
 4. 송장을 작성한다. ( 주소, 이름, 연락처, 우편번호, 물건의 내용)
 5. 금액 지불하고 보낸다.
+
+
+
+---
+
+#### 노트
+
+1. github 가입
+
+2. 저장소 생성
+
+3. git config --global user.name "사용자명"
+
+   git config --global user.email "email" (PC 교체시 재설정)
+
+4. git push 설정시 ID/PW
+
+   - 제어판 -> 사용자계정 -> 자격 증명 관리 -> Windows 자격 증명
+
+
+
+---
+
+1. git clone "url"
+2. git status (상시체크)
+3. git pull(clone 이후 업데이트 갱신)
+4. git add 파일or폴더(파일 첨부 준비 및 갱신)
+5. git commit -m "설명"
+6. git push(파일 전송)
+
+
+
+- 1회 100mb 제한
+- 1회 100개 제한
