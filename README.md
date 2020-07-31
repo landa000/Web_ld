@@ -54,7 +54,7 @@
 ---
 
 1. git clone "url"
-2. git status (상시체크)
+2. **git status (상시체크)**
 3. git pull(clone 이후 업데이트 갱신)
 4. git add 파일or폴더(파일 첨부 준비 및 갱신)
 5. git commit -m "설명"
