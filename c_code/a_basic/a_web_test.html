@@ -1,15 +1,17 @@
 <!DOCTYPE html>
+<!-- a_web_test.html -->
 <html>
   <head>
     <meta charset = "UTF-8">
     <title>첫번째 웹 문서 만들기</title>
     <style>
+    /* css식 주석 */
     body { background-color:#fdc; }
     p { background-color:#969; color:#fff; width:360px; height:60px; padding: 20px; }
     .p_text { font-size:20px;}
     div { width:400px; height:120px; background-color:salmon; float:right;
            margin-bottom:10px; margin-left:10px;margin-right:10px; }
-    #box1 { border-radius: 40px; background-color:#ddb; float:left; }
+    #box1 { border-radius: 40px; background-color:#fd8; float:left; }
     .box { font-size: 3rem; }
     .one { color:#fac;}
     .two { text-decoration:underline;}
@@ -25,13 +27,21 @@
   <body>
     <h1 class="box one two three and">Hello!</h1>
     <p class="p_text">
-    웹문서를 처음으로 만들어봤다.<br />
-    나름 재미가 있다 :D
+    웹문서를 처음으로 만들어봤다.<br />나름 재미가 있다 :D
     </p>
     <p> 무슨일이 일어날까요? </p>
     <div id="box1"></div>
     <div></div>
     <div></div>
     <div></div>
+    <script>
+
+      var myP = document.getElementsByTagName('p')[0];
+
+      myP.addEventListener( 'click', function(){
+        myP.style.backgroundColor = "#555";
+      } );
+
+    </script>
   </body>
 </html>
