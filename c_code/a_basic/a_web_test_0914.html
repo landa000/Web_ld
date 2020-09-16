@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- a_web_test.html -->
+<html>
+  <head>
+    <meta charset = "UTF-8">
+    <title>첫번째 웹 문서 만들기</title>
+    <style>
+    /* css식 주석 */
+    body { background-color:#fdc; }
+    p { background-color:#969; color:#fff; width:auto; height:60px; padding: 20px; }
+    .p_text { font-size:20px;}
+    div { width:50%; height:120px; background-color:salmon; float:right;
+           margin-bottom:10px; margin-left:10px;margin-right:10px; }
+    #box1 { border-radius: 40px; background-color:#fd8; float:left;}
+    .box { font-size: 3rem; }
+    .one { color:#fac;}
+    .two { text-decoration:underline;}
+    .three { text-shadow: 0.1rem 0.1rem 0.1rem rgba(0,0,0,0.5); }
+    .and:hover { color:#fff}
+    </style>
+  </head>
+
+<!-- =====================
+설명, 내용, 누군가에게 지시, 작성날짜 etc... 
+     ===================== -->
+
+  <body>
+    <h1 class="box one two three and">Hello!</h1>
+    	<p class="p_text">
+    	웹문서를 처음으로 만들어봤다.<br />나름 재미가 있다 :D
+    	</p>
+    	<p> 무슨일이 일어날까요? </p>
+    <div id="box1"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <script>
+      // 한줄 주석으로 줄바꿈되면, 주석이 자동으로 해제
+      /* 여러줄 주석
+          추가설명이 가능
+      */
+
+      var myP = document.getElementsByTagName('p')[0];
+
+      myP.addEventListener( 'mouseenter', function(){
+        myP.style.backgroundColor = "#555";
+      } );
+
+      myP.addEventListener( 'mouseleave', function(){
+        myP.style.backgroundColor = "#969";
+      } );
+
+    </script>
+  </body>
+</html>
