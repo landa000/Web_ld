@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* selector_01.css */
+
+body { background-color:#dcf;}
+
+h1 { width:400px; height:70px; background-color:#fda;}
+ul > li { border-width:2px; border-style:solid; border-color:#ffd;}
+ol li { background-image:linear-gradient(#fff, #fda);}
+
+a {background-color:#202; color:#fff;}
+li > a { color:#f87;}
+li > div > a { color:#fd0;}
+
+.wrap {width:80%; background-color: #ccc; border:2px solid #79a;}
+
+
+.nth { width:100px; height:auto;}
+.nth > li:nth-child(2n-1) { background-color:#333;}
+.nth > li:nth-child(2n) { background-color:#ddd;}
+
+/* 선택자는 기본: 나중에 작성한 내용을 기준으로 처리
+   하지만, 기본 타입선택자 < class < id < 자손 또는 자식선택자가 우선 < 인라인선택자(js)
+
+
+   타입 1점
+   class 100
+   id 500
+   자식 또는 자손 1000
+
+*/
+
+/* @ .....{}
+   @ .....;
+   selector {} */
