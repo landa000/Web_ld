@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/* float.css */
+
+#wrap {
+  width:800px; height:auto; background-color:#ddd; margin:auto;
+}
+
+.float_01 {
+  width:100%; height:400px; background-color:#cce;
+}
+
+.sample_01 {
+  width:90%; height:350px; margin:auto; border:1px solid #334; overflow-y:scroll; overflow-x:hidden;
+}
+
+.img_sample { float:left; margin:10px; width:150px; height:150px;}
+.img_sample > img { width:100%; height:auto; border:none;}
+
+p {
+  width:100%; height:100%; background-color:#fc7; margin:0;}
+
+/* ====================================== */
+
+.float_02 {width:100%; height:250px; background-color:#ccb;}
+
+.sample_02 { float:right;
+  width:55%; height:200px; border:1px solid #333;
+}
+.sample_02 > div { width:100px; height:70px; border:2px solid #adf;}
+
+.fl_01 { background-color:#fbf;}
+.fl_02 { background-color:#afb;}
+.fl_03 { background-color:#eea;}
+.fl_04 { background-color:#abf;}
+
+.sample_02 > div:nth-of-type(1) {float:left;}
+.sample_02 > div:nth-of-type(2) {float:left;}
+.sample_02 > div:nth-of-type(3) {float:left;}
+.sample_02 > div:nth-of-type(4) {float:left;}
+
+/* ====================================== */
+
+.float_03 { width: 100%; height:300px; background-color:#ffc;}
+
+.sample_03 { width:90%; height:250px; border:1px solid #433;}
+
+.sample_03 > ul { float:right;
+  margin:0; padding:0; list-style:none;
+  width:auto; height:50px; background-color:#fff;
+}
+
+.sample_03 li { float:left;
+  width:88px; height:48px; border:1px solid #777;}
+/* li는 읽히는 순서대로, 감싸고있는 태그를 우측정렬*/
+
+/* ====================================== */
+
+.float_04 { width:100%; height:700px; background-color:#ddb;}
+
+.sample_04 { width:600px; height:650px; border:1px solid #333;}
+
+.sample_04 > div {
+  width:180px; height:50px; border:2px solid #0ac; text-align:center; line-height:50px; 
+}
+
+.fl_02_01 { float:left;
+  background-color:#fa0;}
+.fl_02_02 { float:left;
+  background-color:#fa2;}
+.fl_02_03 { float:left;
+  background-color:#fa3;}
+.fl_02_04 { float:left;
+  background-color:#fa4;}
+.fl_02_05 { float:left;
+  background-color:#fa5;}
+.fl_02_06 { clear:both;
+  background-color:#fa6;}
+.fl_02_07 { float:left; margin-top:54px;
+  background-color:#fa7;}
+.fl_02_08 { float:left; margin-top:54px;
+  background-color:#fa8;}
+.fl_02_09 { float:left; margin-top:54px;
+  background-color:#fa9;}
+.fl_02_10 { float:left;
+  background-color:#faa;}
+.fl_02_11 { float:left;
+  background-color:#fab;}
+.fl_02_12 { float:left;
+  background-color:#fac;}
+
+  /* ================================================ */
+
+  .float_05 { width:100%; height:1000px; background-color:#acf;}
+
+  .sample_05 { width:600px; height:auto; border:2px solid #565;}
+  .sample_05 > div { float:left;
+    width:300px; height:120px;}
+
+.sam_01 { background-color:#cf0}
+.sam_02 { background-color:#cf4}
+.sam_03 { background-color:#cf8}
+.sam_04 { background-color:#cfa}
+.sam_05 { background-color:#cfc}
+.sam_06 { background-color:#cff}
+/*.sample_05 > .clear_sample { float:none; clear:both;
+  width:100%; height:0; background-color:#fff; overflow:hidden;
+} 1번방법*/
+
+.sample_05::after { 
+  clear:both; content:""; display:block;} /* 2번방법 */
+
+.sample_06 {
+    width:100%; height:100px; color:#fff; background-color:#f53;
+}
+
+/* float란? 선택된 요소를 다른 요소와 비교처리하여,
+   1. 뒤에 다른 요소를 담아 글자를 주변에 위치하도록 처리
+   2. 여러개의 형제요소에 같이 사용하여, 옆으로 나란히 정렬하도록 처리
+   3. 때로는 float을 강제로 취소 처리(float:none;)
+   4. 여러개의 float 처리된 요소들의 마지막에 종료기능부여(clear:both;)
+   5. float요소를 담으면, inline 또는 inline-block요소들은 모두 강제 block된다.*/
