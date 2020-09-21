@@ -1,69 +1,81 @@
 @charset "UTF-8";
 /* layout_01.css */
 
+/* common.css: 반복사용되는 형태에 공통의 class를 부여하여, 
+    빠르고 쉽게 웹페이지를 구성하도록 처리하는 기능
+*/
+
+/* hidden */
+.hidden
+  { width:0; height:0; overflow:hidden;} 
+
+/* clear:both */
+.clearfix:after, .clearfix::after
+{content:""; display:block; clear:both;}
+
+
+
+
 #wrap {
-  width:600px; height:auto; min-height:500px; margin:100px auto;}
+  width:600px; height:auto; min-height:500px; margin:10px auto;}
 
 /* #header ====================================================== */
-#header { 
-  width:100%; height:100px; background-color:#f07;}
+/*width:calc(100% - 20px);*/
+#header { width:100%; height:auto; padding:10px;
+  box-sizing:border-box;
+  background-color:#f07;}
+
+h1 { float:left;
+  width:120px; height:100px; background-color:#ffd;}
+
+h1 a {display:block; width:100%; height:100%; font-size:1rem;}
+
+.navigation { float:right; width:400px; height:100px;}
+
+.navigation > ul { margin:0; padding:0;
+  width:100%; height:100%; list-style:none;}
+.navigation > ul li { float:left; width:60px; height:100%;
+  margin-right: 8px; background-color:#f5e;}
+.navigation > ul li:nth-child(2n) {background-color:#5ef;}
+.navigation > ul li:last-child { margin-right:0;}
+
+.navigation a {
+  display:block; width:100%; height:100%;
+}
+
 /* #section ====================================================== */
-#section { 
-  width:100%; height:auto;}
+#section { width:100%; height:auto;}
 
-#section > h2 { width:0; height:0; overflow:hidden;}
-
-.sect_01 { float:left;
-  width:40%; height:300px; background-color:#329664;}
-.sect_02 { float:left;
-  width:60%; height:300px; background-color:#555655;}
-#section:after,
-#section::after {content:""; display:block; clear:both;}
+#section > div { float:left; height:300px;}
+.sect_01 { width:40%; background-color:#329664;}
+.sect_02 { width:60%; background-color:#555655;}
 
 /* #aside ====================================================== */ 
 #aside { width:100%; height:auto;}
 
-#aside > h2 { width:0; height:0; overflow:hidden;}
-
-.side_01 { float:left;
-  width:33.333333%; height:300px; background-color:#adaadd;}
-.side_02 { float:left;
-  width:33.333334%; height:300px; background-color:#607259;}
-.side_03 { float:left;
-  width:33.333333%; height:300px; background-color:#ad6fdd;}
-#aside:after,
-#aside::after {content:" "; display:block; clear:both;}
+#aside > div { float:left; height:300px; width:33.333333%;}
+.side_01 { background-color:#adaadd;}
+.side_02 { width:33.333334%; background-color:#607259;}
+.side_03 { background-color:#ad6fdd;}
 
 /* #article ===================================================== */
 #article { width:100%; height:auto;}
 
-#article > h2 { width:0; height:0; overflow:hidden;}
-
-#article .art_01 { float:left;
+.art_base_01 { float:left; width:70%; height:150px;}
+.art_base_01.art_01 { float:left;
   width:30%; height:300px; background-color:#27294d;}
-#article .art_02 { float:right;
-  width:70%; height:150px; background-color:#ff7259;}
-#article .art_03 { float:right;
-  width:70%; height:150px; background-color:#ad6fdd;}
-#article:after,
-#article::after {content:" "; display:block; clear:both;}
+.art_base_01.art_02 { background-color:#ff7259;}
+.art_base_01.art_03 { background-color:#ad6fdd;}
 
 /* #content ===================================================== */
 #content { width:100%; height:auto;}
 
-#content > h2 { width:0; height:0; overflow:hidden;}
-
-
-#content .art_02 { float:left;
-  width:70%; height:150px; background-color:#ff7259;}
-#content .art_03 { float:left;
-  width:70%; height:350px; background-color:#ad6fdd;}
-#content .art_01 { float:right; margin-top:-150px;
-  width:30%; height:500px; background-color:#27294d;}
-#content:after,
-#content::after {content:" "; display:block; clear:both;}
+.con_base_01 { float:left; width:70%;}
+.con_base_01.art_02 { height:150px; background-color:#ff7259;}
+.con_base_01.art_03 { height:350px; background-color:#ad6fdd;}
+.con_base_01.art_01 { margin-top:-150px; width:30%; height:500px; background-color:#27294d;
+}
 
 /* #footer ====================================================== */
-#footer { 
-  width:100%; height:100px; background-color:#03f;}
+#footer { width:100%; height:100px; background-color:#03f;}
 
