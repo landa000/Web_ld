@@ -66,19 +66,27 @@ background-color:#aaa; margin-top:18px;}
   margin-top:60px;  padding:0; background-color:#cbc;}
 .new_con_area { width:1300px; height:700px; margin:auto; padding:0;}
 
-.new_con_area_01 { float:left; width:640px; height:700px; margin:0; padding:0;}
-.new_con_title_img { float:left; width:640px; height:80px; background-color:#fff;}
-.new_con_title_area { float:left; width:640px; height:400px; background-color:#bbb;}
-.new_con_title_text { float:left; width:600px; height:200px; margin:10px 20px 5px 20px;
-  background-color:#fff;}
-.new_con_title_text_01 { width:600px; height:50px; margin-bottom:20px;
-   padding:0; background-color:#ccc;}
-.new_con_title_text_02 { width:600px; height:130px; margin:0; padding:0; background-color:#ccc;}
+.new_con_area_01 { float:left; width:640px; height:700px; 
+  margin:0; padding:0;  list-style:none;}
+.new_con_area_01 li { float:left; width:100%; margin:0; padding:0;}
+.new_con_title_img  { height:80px; background-color:#fff;}
+.new_con_title_area { height:400px; background-color:#bbb;}
 
-.new_con_area_02 { float:right; width:630px; height:700px; margin:0; padding:0;}
-.new_con_more_01 { float:left; width:630px; height:80px; background-color:#fff;}
-.new_con_more_area { float:left; width:630px; height:400px; background-color:#bbb;}
-.new_con_more_02 { float:left; width:630px; height:180px; background-color:#fff;}
+.new_con_title_text { float:left; width:600px; height:auto; margin:10px 20px 5px 20px;
+  padding:0; background-color:#fff; list-style:none;}
+.new_con_title_text > .new_con_title_text_01 { height:50px; }
+.new_con_title_text > .new_con_title_text_02 { height:130px; margin-top:20px;}
+.new_con_title_text li { float:left; width:100%; margin:0; padding:0; 
+  background-color:#ccc;}
+
+
+.new_con_more_01,
+
+.new_con_area_02 { float:right; width:630px; height:700px; margin:0; padding:0; list-style:none;}
+.new_con_area_02 li { float:left; width:100%; margin:0; padding:0;}
+.new_con_more_01   { height:80px; background-color:#fff;}
+.new_con_more_area { height:400px; background-color:#bbb;}
+.new_con_more_02   { height:180px; background-color:#fff;}
 
 /*recommendedContentBox ===================================================== */
 #recommendedContentBox { width:100%; height:600px;  margin-bottom:80px;}
