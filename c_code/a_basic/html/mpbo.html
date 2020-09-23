@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- mpbo.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/src/mpbo.css">
+  <title>웹기초- 여백, 선</title>
+  <link rel="shortcut icon" href="../img/icon_03.png" type="image/png">
+  <link rel="apple-touch-icon" href="../img/icon_03.png">
+</head>
+<body>
+  <!-- layout -->
+<div id="wrap">
+  <h2>nth-child</h2>
+  <p>연속된 요소를 선택할때 사용하는 선택자</p>
+  <ol class="nth_01">
+    <li>nth-c</li>
+    <li>nth-c</li>
+    <li>nth-c</li>
+    <li>nth-c</li>
+    <li>nth-c</li>
+  </ol>
+  <div class="nth_02">
+    <h2>nth</h2>
+    <p class="nth">nth</p>
+    <p class="nth">nth</p>
+    <p class="nth">nth</p>
+    <p class="nth">nth</p>
+    <div class="nth">nth</div>
+    <div class="nth">nth</div>
+    <div class="nth">nth</div>
+    <div class="nth">nth</div>
+    <p class="nth">nth</p>
+    <p class="nth">nth</p>
+    <p class="nth">nth</p>
+    <div class="nth">nth</div>
+    <div class="nth">nth</div>
+  </div>
+
+
+
+
+  <h1><a href="./content.html">웹기초</a></h1> <hr />
+  <h2>margin</h2>
+  <div class="part margin">
+    <ul>
+      <li>margin_01</li>
+      <li>margin_02</li>
+      <li>margin_03</li>
+      <li>margin_04</li>
+      <li>margin_05</li>
+      <li>margin_06</li>
+      <li>margin_07</li>
+    </ul>
+  </div><!--// margin part-->
+
+  <div class="part padding">
+    <div class="padding_sample">
+      <div class="insert_p">내용작성Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quia culpa praesentium nulla, at omnis earum consequuntur ullam libero sunt qui. Illo recusandae optio ipsum voluptate deleniti natus odit enimm</div>
+    </div>
+    <ul>
+      <li>padding_01</li>
+      <li>padding_02</li>
+      <li>padding_03</li>
+      <li>padding_04</li>
+      <li>padding_05</li>
+      <li>padding_06</li>
+      <li>padding_07</li>
+    </ul>
+  </div><!--// padding part-->
+
+  <div class="part mp_sample">
+    <p>margin, padding 쓰임새</p>
+    <p> 하나의 요소안에 첫번째 요소가 float,position 처리가 없을시, margin-top값을 사용할 경우엔 부모요소를 margin 처리하게된다</p>
+    <p>margin값이 위아래 겹칠 경우, 큰값만 처리됨(단, float처리된 겹침은 제외)</p>
+    <p>margin값은 눈에 보이는 공간의 거리값 조절기능, +가 아닌 -값도 처리된다.(padding은 안됨)</p>
+    <p>단, margin값은 auto, 좌우에 한해서만 %처리 가능,
+      상하에 %값 처리는 지양해야함<br />
+    상하는 명확한 값을 파악하기 어려움(부모의 높이가 기준이 아님)</p>
+    <p>float기능과 margin 기능을 같이 사용할 경우,margin:auto;는 좌/우 가운데 배치되지 않는다</p>
+  </div><!--// padding part-->
+
+  <div class="part border">
+    <ul>
+      <li>border_01</li>
+      <li>border_02</li>
+      <li>border_03</li>
+      <li>border_04</li>
+      <li>border_05</li>
+      <li>border_06</li>
+      <li><span>border_07</span></li>
+    </ul>
+  </div><!--// border part-->
+
+  <div class="part outline">
+    <ul>
+      <li>outline_01</li>
+      <li><a href="#">outline_02</a></li>
+      <li><button type="button">outline_03</button></li>
+      <li tabindex="0">outline_04</li>
+    </ul>
+  </div><!--// outline part-->
+
+  <div class="part box_sizing">
+    <div>content-box</div>
+    <div>border-box</div>
+  </div><!--// box-sizing part-->
+</div>
+</body>
+</html>

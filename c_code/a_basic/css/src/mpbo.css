@@ -1,0 +1,181 @@
+@chraset "UTF-8";
+/* mpbo.css */
+/* 선행작업 - 기본 margin, padding 요소 지우기*/
+
+html,body,h1,h2,h3,h4,h5,ul,li,hr,div,p { margin:0; padding:0;} 
+
+#wrap {
+  width:1100px; height:auto; min-height:1200px; margin:auto;
+  padding-top:20px background-color:#eee;}
+
+h1 { width:300px; height:40px; background-color:#99e;
+    margin:auto; margin-bottom:20px;}
+  
+.part {width:100%; height:400px; border:1px solid #778;}
+.part > ul { width:100%; height:100%; margin:0; padding:0; 
+  list-style:none;}
+.part > ul > li { float:left; width:100px; height:100px; 
+  border:1px solid #0af; text-align:center; line-height:100px;}
+
+/* margin : 요소와 요소 사이의 거리(눈에 보이는 공간)
+   margin:10px; 상하좌우(4방향) 동일 여백
+   margin: 10px 30px; 상하(10), 좌우(30)
+   margin: 10px 30px 50px; 상(10) 좌우(30) 하(50)
+   margin: 10px 30px 50px 70px; 상(10) 우(30) 하(50) 좌(70) 시계방향
+   margin-방향:50px; 원하는 방향에 50만큼 값을 준다 
+   margin이 중첩됐을 경우에, 나중에 작성된 부분이 처리되므로 주의
+*/
+
+/* padding: 요소의 부피를 키워 내부의 공간을 확보
+            width, height 값의 실제는 변하지 않지만, 외부에선 변한것으로 보임
+   padding:20px; 상하좌우 동일 면적
+   padding:20px 40px; 상하(20), 좌우(40)
+   padding:10px 30px 40px; 상(10) 좌우(30) 하(40)
+   padding:10px 20px 30px 50px; 상(10) 우(20) 하(30) 좌(50)
+   padding-방향:50px; 원하는 방향에 50만큼 면적을 준다 
+
+*/
+
+.nth_01 > li {
+ border-bottom:1px solid #aaa;}
+.nth_01 > li:nth-child(1) {
+  background-color:#fa8;}
+.nth_01 > li:nth-child(4) {
+  background-color:#88a;}
+
+.nt { padding-left:1rem; border-bottom:1px solid #fda;}
+.nt:nth-child(2) {
+  background-color:#fac;}
+.nt:nth-child(5) {
+  background-color:#2af;}
+
+.nth_02 p:nth-of-type(2) { color:#a1a;}
+.nth_02 p:nth-of-type(5) { color:#a1a; font-weight:bold;}
+.nth_02 div:nth-of-type(5) { color:#f89; font-weight:bold;}
+
+/* margin =============================================================== */
+.margin li:nth-child(1) { margin:10px;}
+.margin li:nth-child(2) { margin:10px 30px;}
+.margin li:nth-child(3) { margin:10px 30px 50px;}
+.margin li:nth-child(4) { margin:10px 30px 50px 70px;}
+.margin li:nth-child(5) { margin:0 0 0 100px;}
+.margin li:nth-child(6) { margin-top:50px}
+.margin li:nth-child(7) { margin:20px; margin-top:70px;}
+
+/* padding =============================================================== */
+.padding > ul > li { text-align:left; line-height:20px;}
+.padding > ul > li:nth-child(2n-1) {background-color:#fa7;}
+.padding > ul > li:nth-child(2n)   {background-color:#7af;}
+
+.padding > ul > li:nth-child(1) { padding:20px;}
+.padding > ul > li:nth-child(2) { padding:20px 40px;}
+.padding > ul > li:nth-child(3) { padding:10px 30px 40px;}
+.padding > ul > li:nth-child(4) { padding:10px 20px 30px 40px;}
+.padding > ul > li:nth-child(5) { padding:10px; padding-bottom:50px;}
+
+.padding_sample { width:300px; height:150px; background-color:#fbb;
+  padding:20px;}
+.insert_p { width:100%; height:100%; background-color:#fff;}
+
+/* mp_sample =========================================================== */
+.mp_sample { width:70%; height:750px; margin:auto; padding:0; border:2px solid #877;}
+.mp_sample p { width:60%; height:80px; background-color:#aca;
+  border-bottom:1px solid #07f;}
+
+.mp_sample P:nth-of-type(1) {margin:auto;
+  margin-top:100px; margin-bottom:30px;}
+.mp_sample P:nth-of-type(2) { margin-top:50px;}
+.mp_sample P:nth-of-type(4) { margin-top:100px; margin-left:50px; 
+  margin-top:-40px; background-color:#4f4;}
+.mp_sample P:nth-of-type(5) { width:60%; height:90px; margin-top:50px;
+  margin-left:40%; background-color:#ee7;}
+
+/* border =============================================================== */
+.border ul li:nth-child(1) {
+  border-width:10px; 
+  border-style:solid; /*solid 직선, dotted 점선, dashed:쇄선, ridge, double ... */
+  border-color:#2fd;
+}
+
+.border ul li:nth-child(2) { border: 5px dotted #72d;}
+
+.border ul li:nth-child(3) {
+  border-width:15px; border-top-width:3px; border-left-width:30px;
+  border-style:solid; border-right-style:dotted;
+  border-bottom-style:ridge;
+  border-color:#f08; border-left-color:#fc7;}
+
+.border ul li:nth-child(4) { 
+  background-color:#caa;
+  border:30px ridge #fa0;}
+
+.border ul li:nth-child(5) { 
+  border:30px solid #0af;
+  border-top-color:#fff;}
+
+.border ul li:nth-child(6) { 
+  width:0; height:0;
+  border:30px solid #f0f;
+
+  border-top-width:0; border-bottom-width:50px;
+  border-top-color:transparent; border-left-color:rgba(255,0,81,0);
+  border-right-color:hsla(358, 100%, 50%, 0);
+
+  font-size:0.5rem; text-indent:-20px; line-height:90px;
+  color:#fff; font-weight:bold;}
+
+.border ul li:nth-child(7) {
+  border:15px solid #F44;
+  border-left-color:transparent; border-bottom-color:transparent;
+  transform:rotate(45deg);
+}
+
+.border ul li:nth-child(7)>span { display:block; width:100%; height:100%;
+  transform:rotate(-45deg);}
+
+/* outline =============================================================== */
+.outline ul li,
+.outline ul li > button { width:auto; min-width:100px; cursor:pointer;}
+
+.outline li:nth-child(1) {
+  outline:10px solid #0af; outline-offset:5px;}
+
+.outline li:nth-child(2) > a {
+  display:block; width:100%; height:100%; }
+
+.outline li:nth-child(2) > a:focus {
+  outline: 10px solid #fa0;}
+.outline li:nth-child(3) > button {
+  display:block; width:100px; height:100%; border:0;
+  background-color:transparent;}
+.outline li:nth-child(3) > button:focus {
+  outline: 10px solid #fb0;}
+.outline li:nth-child(4):focus {
+  outline:20px solid #0fb;}
+
+
+/* : focus란?
+  링크(a), 버튼(input or button), 입력창(input,select)등의 환경에서, 
+  마우스가 아닌 키보드로 위치를 찾아서 기능을 수행하고자 할때, 해당 위치를 체크하는 기능*/  
+
+/*.outline li > a:nth-child(2)  *li 내부의 > 두번째 a
+  .outline li:nth-child(2) > a  *두번째 li 내부의 > a  */
+
+/* outline속성은 margin, padding, border와는 다르게 다른요소에 영향을 미치지 않는다.
+   outline속성은 일부 방향성이 없다. 
+   offset기능 존재 
+   대부분 focus를 처리하게 만드는 요소(a,button,form내부의 요소)에서 사용됨*/
+
+/* box-sizing =============================================================== */
+.box_sizing { width:80%; height:400px; margin:100px auto;
+  box-sizing:border-box;}
+
+.box_sizing div { float:left; width:100px; height:100px; margin:10px; padding:15px;
+  border:30px solid #bb7; background-color:#fd0; border-right-color:#0af;
+  box-sizing:content-box;}
+
+.box_sizing div:nth-child(1) { box-sizing:content-box;}
+.box_sizing div:nth-child(2) { box-sizing:border-box;}
+
+/* box-sizing 하기 전(before)은 box-sizing:content-box;로서 기본형임
+   box-sizing을 사용하면(after) box-sizing:border-box;로서 border, padding을 내부에서 처리*/
