@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- position_02.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/fonts/css/all.css">
+  <link rel="stylesheet" href="../css/src/position_02.css">
+  <title>position_02</title>
+  <link rel="shortcut icon" href="../img/icon_03.png" type="image/png">
+  <link rel="apple-touch-icon" href="../img/icon_03.png">
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <div id="headBox">
+      <h1><a href=".content.html">웹기초</a></h1>
+    </div>
+    <div id="sideBox">
+      <div class="sample_fixed">한쪽으로 치우쳐져있는 요소의 위치</div>
+    </div>
+    <div class="modal_window">
+      <div class="modal_message">
+        <h3>message</h3>
+        <p>안내문 테스트 팝업</p>
+      </div>
+    </div>
+    <div class="side">
+      <h2>우측에붙이기</h2>
+    </div>
+
+    <div id="viewBox">
+      <h2>광고영역</h2>
+      <div class="indicator">
+        <button type="button" class="btn_next">
+          <span class="hidden">다음</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+        <button type="button" class="btn_prev">
+          <span class="hidden">이전</span>
+          <i class="fas fa-arrow-left"></i>
+        </button>
+      </div>
+      <div class="button">
+       <div class="btn btn_stop"></div>
+       <div class="btn btn_count"></div>
+       <div class="btn btn_prev2"></div>
+      </div>  
+    <div class="view_area">
+      <ul>
+        <li class="adv_01">adv_01</li>
+        <li class="adv_02">adv_02</li>
+        <li class="adv_03">adv_03</li>
+        <li class="adv_04">adv_04</li>
+        <li class="adv_05">adv_05</li>
+        <li class="adv_06">adv_06</li>
+        <li class="adv_07">adv_07</li>
+        <li class="adv_08">adv_08</li>
+        <li class="adv_09">adv_09</li>
+        <li class="adv_10">adv_10</li>
+      </ul>
+    </div>
+    </div>
+
+  </div>
+
+  <!-- script -->
+
+  <script src="https://unpkg.com/jquery"></script>
+
+<script>
+  console.log($.fn);
+ $('.modal_window').on('click', function(){
+    $('.modal_window').slideUp(300);
+  });
+
+  // var msg = document.getElementsByClassName('modal_message')[0];
+  // var mwn = document.getElementsByClassName('modal_window')[0];
+
+    msg.addEventListener('click', function(){
+    mwn.style.display = 'none';
+  });
+  
+</script>
+
+</body>
+</html>

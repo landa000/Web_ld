@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/*position_01.css*/
+
+/*resset.css*/
+html,body {margin:0;}
+h1,h2,h3,h4,h5,h6,p {margin:0;}
+ul,li,ol,dl,dt,dd {margin:0; padding:0; list-style:none;}
+
+/* common.css */
+.clearfix:after, .clearfix::after {
+  content:" "; display:block; clear:both; }
+
+/* layout.css */
+#wrap { width:800px; height:2500px; margin:auto;
+  /* background-color:#fda; */  background-image:linear-gradient(rgba(250,250,250,0.5),#fda, #adf);}
+
+.position { width:90%; height:180px; margin:auto; border:1px solid #377;}
+.position > ul { width:100%; height:100%;}
+.position > ul > li { float:left; width:120px; height:120px;
+  border:2px solid #f98; box-sizing:border-box;
+  font-weight:bold; text-align:center; line-height:120px;}
+
+.default { background-color:#fa0}
+.static { background-color:#f60}
+.fixed { background-color:#f45}
+.absolute { background-color:#f15}
+.relative { background-color:#f08}
+
+/* position ===================================== 
+ * static - 기본형, 다른 기능이 적용되지 않음
+
+ * fixed - 브라우저를 기준으로 화면상에 고정됨
+           top/bottom, left/right를 함께잡는경우 주의해서 사용
+            top,bottom,left,right,z-index 모두 사용가능
+
+ * absolute - 별도 설정이 없을시 브라우저를 기준으로 위치함.
+              기준이 존재하면 해당 요소를 기준으로 위치함(absolute, relative,fixed)
+              top,bottom,left,right,z-index 모두 사용가능
+
+ * z-index:n; - position요소의 전후위치를 잡아주는 형태, -값을 사용하면 선택이 어려움
+                단, 기준이 되는 요소에서 +/- 상황에 따라 내부요소의 z-index값이 달라짐
+
+ * relative - 자신을 기준으로 위치를 이동, 주변요소에 영향을 미치지 않는다.
+              top,bottom,left,right,z-index 모두 사용가능
+*/
+
+.position > ul { position:relative; z-index:1;}
+.static { position:static; top:400px; left:5000px; z-index:-1000;}
+.fixed { position:fixed; top:250px; right:100px; margin:auto; z-index:1; }
+.absolute {position:absolute; top:300px; right:100px;}
+.relative { position:relative; top:150px; left:-230px; z-index:-1;}
