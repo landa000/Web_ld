@@ -3,7 +3,22 @@
 <html lang="ko-KR">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/fonts/css/all.css">
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/base/layout_02_variable.css">
+
   <link rel="stylesheet" href="../css/src/layout_02_result.css">
+
+  <!-- <link rel="stylesheet" href="../css/src/layout_02/layout_02-wrap.css">
+  <link rel="stylesheet" href="../css/src/layout_02/layout_02-headBox.css">
+  <link rel="stylesheet" href="../css/src/layout_02/layout_02-adViewBox.css">
+  <link rel="stylesheet" href="../css/src/layout_02/layout_02-localNavBox.css">
+  <link rel="stylesheet" href="../css/src/layout_02/layout_02-content_area.css">
+  <link rel="stylesheet" href="../css/src/layout_02/layout_02-miniAdBox.css">
+  <link rel="stylesheet" href="../css/src/layout_02/layout_02-footBox.css"> 
+ -->
+
   <!--[if IE]>
     <link rel="shortcut icon" href="../img/icon_01.png" type="image/png">
     <script src="../ie/modernizr-custom.js"></script>
@@ -34,21 +49,50 @@
 
     <div id="adViewBox">
       <!-- 광고영역 -->
-      <div class="view_outer">광고</div>
+      <div class="view_btn">
+        <button type="button" class="next_view">
+          <i class="far fa-arrow-alt-circle-right"></i>
+          <span class="hidden_area">next ad view</span>
+        </button>
+        <button type="button" class="prev_view">
+          <i class="far fa-arrow-alt-circle-left"></i>
+          <span class="hidden_area">prev ad view</span>
+        </button>
+      </div>
       <div class="view_indicator"><!--광고 순서-->
-       <ul class="clearfix"
-       >
-         <li>ad_indi_01</li>
-         <li>ad_indi_02</li>
-         <li>ad_indi_03</li>
-         <li>ad_indi_04</li>
-         <li>ad_indi_05</li>
-         <li>ad_indi_06</li>
+       <ul class="clearfix">
+         <li><a href="#"><span class="hidden_area">ad_01_title_text</span></a></li>
+         <li><a href="#"><span class="hidden_area">ad_02_title_text</span></a></li>
+         <li><a href="#"><span class="hidden_area">ad_03_title_text</span></a></li>
+         <li><a href="#"><span class="hidden_area">ad_04_title_text</span></a></li>
+         <li><a href="#"><span class="hidden_area">ad_05_title_text</span></a></li>
+         <li><a href="#"><span class="hidden_area">ad_06_title_text</span></a></li>
        </ul> 
+      </div>
+      <div class="view_outer">
+        <div class="view_area">
+          <div class="view_01">view_01</div>
+          <div class="view_02">view_02</div>
+          <div class="view_03">view_03</div>
+          <div class="view_04">view_04</div>
+          <div class="view_05">view_05</div>
+          <div class="view_06">view_06</div>
+        </div>
       </div>
     </div><!--// adview============================= -->
 
     <div id="localNavBox">
+      <div class="local_btn">
+        <button type="button" class="next_local">
+          <i class="far fa-arrow-alt-circle-right"></i>
+          <span class="hidden_area">next ad view</span>
+        </button>
+        <button type="button" class="prev_local">
+          <i class="far fa-arrow-alt-circle-left"></i>
+          <span class="hidden_area">prev ad view</span>
+        </button>
+      </div>
+
       <div class="local_nav_outer">
         <!-- local navigation -->
         <ul class="clearfix">

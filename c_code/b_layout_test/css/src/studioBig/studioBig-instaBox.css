@@ -1,0 +1,14 @@
+/* studioBig-instaBox.css */
+
+#instaBox { width:100%; height:1140px; position: relative;
+  padding-top:70px;
+  box-sizing:border-box;
+  background-color: #eee;}
+
+#instaBox h2 { margin-bottom:80px;}
+
+#instaBox ul { width:var(--max-width2); margin:auto;}
+
+#instaBox li { float:left; width:260px; height:260px; margin:10px;
+  background-color: var(--step2-color);}
+

@@ -1,0 +1,28 @@
+/* layout_02_headBox.css
+==================================================*/
+#headBox { height:150px; padding:34px 50px 0; box-sizing:border-box;
+  position:relative;
+  background-color:#ddd;}
+
+.logo { 
+  float:left; width:250px; height:80px; margin-right:75px;
+  background-color:var(--step2-color);}
+
+.navigation { 
+  /*float:left;*/ position:absolute; 
+  /* left:0; right:0; margin:auto; 중앙정렬1*/
+  /* left:50%; margin-left:-425px; 중앙정렬2*/
+  left:50%; transform:translate(-50%); top:34px;/* 중앙정렬3 */
+  width:850px; height:auto; background-color: #07a;}
+  .navigation > ul { width:100%; height:auto;}
+
+/* float를 정리하기 위해 마지막에 clear:both사용
+   li의 마지막에는 다른 요소가 들어갈 수 없으므로 :after 가상태그를 생성
+   content, display:block; 필요*/
+
+  .navigation li { float:left; width:150px; height:70px; margin:5px 10px;
+  background-color:#fc7;}
+
+.member { 
+  float:right; width:250px; height:80px; background-color: var(--step2-color);}
+

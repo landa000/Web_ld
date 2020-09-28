@@ -1,0 +1,7 @@
+/* layout_02-wrap.css */
+
+#wrap {
+  width:var(--max-width_01); margin:auto; height:auto; min-height:500px; 
+  background-color:#dadada;}
+
+  #wrap > div { width:100%; }

@@ -1,0 +1,12 @@
+/* studioBig-artworkBox.css */
+
+#artworkBox { width:100%; height:400px; position:relative; padding-top:30px;
+  box-sizing:border-box;
+ }
+
+#artworkBox h2 { margin-bottom:70px;}
+
+#artworkBox ul { width:var(--max-width2); margin:auto;}
+
+#artworkBox li { float:left; width:355px; height:240px; margin-left:15px;
+  background-color: var(--step2-color);}

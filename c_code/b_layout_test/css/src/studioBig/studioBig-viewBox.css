@@ -1,0 +1,33 @@
+/* studioBig-viewBox.css */
+
+#viewBox { width:100%; height:420px; position:relative;
+background-color: #ccc;}
+
+.view_indicator { position:absolute; bottom:20px; left:0; right:0;
+  margin:auto;
+  width:90px; height:12px;}
+
+.view_indicator ul { width:var(--max-width2); height:100%;}
+
+.view_indicator li { float:left; width:12px; height:12px;
+  border-radius:6px; margin: 0 3px;
+  background-color: var(--step3-color);}
+
+.view_area { width:1120px; height:100%;}
+
+.view_area ul { width:400%; height:100%;}
+.view_area li { float:left; width:calc(100%/4); height:100%;
+}
+
+.view_ad_01 {background-color: #e08;}
+.view_ad_02 {background-color: #f05;}
+.view_ad_03 {background-color: #e40;}
+.view_ad_04 {background-color: #f99;}
+
+.view_btn { position:absolute; top:0; bottom:0; left:0; right:0;
+  z-index:10;
+  width:var(--max-width2); height:0; margin:auto;}
+.view_btn button { width:30px; height:30px;
+  font-size:2rem; color:#fff; }
+.next_view { float:right;}
+.next_prev { float:left;}

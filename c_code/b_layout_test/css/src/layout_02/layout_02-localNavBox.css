@@ -1,0 +1,22 @@
+/* layout_02-localNavBox.css
+ ==================================================*/
+#localNavBox  { position:relative;
+  height:auto;
+  margin-bottom:50px; padding:20px 0 30px; box-sizing:border-box;
+  background-color:#aaa;}
+  
+ .local_btn { position:absolute; z-index:10;
+   top:-60px; bottom:0; left:0; right:0;
+  width:1480px; height:0; margin:auto;}
+ .local_btn > button {
+   width:40px; height:40px; font-size:2.5rem; color:#fff;
+   text-shadow: 1px 1px 1px rgba(0,0,0,0.3);}
+ .next_local {float:right;}
+ .prev_local {float:left;}
+
+ .local_nav_outer { position:relative; width:1500px; height:auto;
+  margin:auto; padding: 0 60px; box-sizing:border-box;
+  background-color:var(--step2-color); }
+ .local_nav_outer ul { width:100%; height:auto;}
+ .local_nav_outer li { float:left; width:200px; height:150px; margin:25px 15px; background-color: #fc7;}
+

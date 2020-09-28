@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@import url("./studioBig/studioBig-wrap.css");
+@import url("./studioBig/studioBig-headBox.css");
+@import url("./studioBig/studioBig-viewBox.css");
+@import url("./studioBig/studioBig-bestBox.css");
+@import url("./studioBig/studioBig-recentBox.css");
+@import url("./studioBig/studioBig-artworkBox.css");
+@import url("./studioBig/studioBig-instaBox.css");
+@import url("./studioBig/studioBig-footBox.css");

@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+/* variable.css */ /* base에 포함되기도 함 */
+:root {
+  --step2-color:#0af;
+  --max-width_01:100%;
+}
