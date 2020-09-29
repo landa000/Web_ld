@@ -1,0 +1,16 @@
+/* gcass_sideBox */
+
+#sideBox { float:left; width:100%; height:30px;
+ position:relative;   z-index:20;
+background-color: #888; }
+
+.side_menu { float:right; width:380px; height:100%;
+  position:absolute; right:40px; top:0; bottom:0;
+  background-color: #fff30d;}
+
+.side_menu li { float:left; width:90px; height:100%;
+  text-align:center; line-height:30px; font-family: Arial, sans-serif;
+  color:#fff;}
+.side_menu li:nth-child(1) { background-color:#888;}
+.side_menu li:nth-child(2) { background-color:#575757;}
+.side_menu li:last-child { width:200px; text-align:left; }

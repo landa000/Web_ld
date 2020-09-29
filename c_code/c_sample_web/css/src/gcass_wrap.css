@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/* gcass_wrap.css */
+
+/* import */
+
+@import url("./gcass_headBox.css");
+@import url("./gcass_sideBox.css");
+@import url("./gcass_viewBox.css");
+@import url("./gcass_footBox.css");
+
+#wrap { width:100%; min-width:980px; height:auto; min-height:850px;
+margin:auto;
+background-color: #eee;}
+
+
+
+

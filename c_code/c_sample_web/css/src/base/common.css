@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/*common.css*/
+
+/* common.css: 공통의 class명을 설정, 웹페이지 제작에 용이하도록 처리*/
+
+.hidden_area { display:block;
+  position: absolute; z-index:-1; 
+  width:0; height:0; overflow:hidden;}
+
+.clearfix:after, .clearfix::after {
+  content:""; display:block; clear:both; }

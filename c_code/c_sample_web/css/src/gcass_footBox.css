@@ -1,0 +1,36 @@
+/* gcass_footBox.css */
+
+#footBox { float:left; width:100%; height:110px; position:relative;
+  z-index:20;
+  padding-top:15px; box-sizing:border-box;
+  background-color: #fff;}
+
+.gcass_logo_foot { float:left; width:75px; height:50px;
+  margin-left:40px;
+  background-color: #575757;}
+
+.info_company { float:left; width:100px; height:50px;
+  margin-left:15px;
+  background-color: #575757;}
+
+.address { float:left; width:340px; height:50px;
+  margin-left:25px; color: #575757}
+
+.familysite { float:right; width:300px; height:105px;
+  position:absolute; right:40px; bottom:46px;}
+
+.familysite ul { width:100%; height:100%;}
+
+.family_context_bg { float:left; width:90px; height:100%; color:#fff;
+  text-align:center; line-height:40px; font-family: Arial, sans-serif;
+  background-color:#575757;}
+
+.family_url_area { float:right; width:190px; height:100%; color:#575757;
+  font-family: Arial, sans-serif;
+  text-align:left; line-height:40px;}
+
+
+.familysite ul li { width:100%; height:40px;}
+.familysite ul li:nth-child(1) { background-color:#fff30d;} 
+.familysite ul li:nth-child(2) { background-color:#fff30d;} 
+.familysite ul li:last-child { text-align:right; height:25px;} 
