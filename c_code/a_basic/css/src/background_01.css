@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* background_01.css */
+
+/* reset.css */
+
+/* common.css */
+
+/* variable.css */
+
+/* design.css */
+
+#wrap {width:960px; height:auto; margin:auto; background-color: #dfdfdf;
+  margin-bottom:1000px;}
+
+h1 { padding:10px; background-color: #0ac; color:#fff; text-indent:20px;}
+h2 { width:100%; height:25px; font-size:20px; color:#121118; line-height:25px;
+  background-color: #ccc;}
+
+.part { width:100%; height:500px; border-bottom: 2px solid #121118;}
+h3 { width:100%; height:15px; font-size:12px; margin:0; background-color: #cce;}
+.inner { width: 95%; height:485px; margin:auto; border:1px solid #334;}
+
+/* =============================================== */
+
+/*
+  img요소와 background-image 차이점
+  1. background-image 반복요소로 기능함
+  2. 내부요소와 배경이미지는 중첩사용가능
+  3. background-image는 이미지를 불러올경우 url() 함수 사용
+  4. url() 내부에는 css문서상의 상대경로로 이미지를 불러오며 "" 내부에 작성 권장
+  5. background-image 사용시 이미지는 반복처리되므로, 이를 수정가능
+     background-repeat: repeat | repeat-x | repeat-y | no-repeat ;
+  6. background-position: 이미지의 위치를 설정하는 기능
+  7. top, left, right, bottom, center 등의 속성 사용가능 but 비권장
+  8. 0, 100%, 50% 등의 %값으로 위치에 대한 설명을 대체 가능
+     + background-position에선 %좌표가 배경요소의 크기비율+이미지속성의 크기비율을 조합하여 배치됨
+     + % 외 다른 값의 기준점은 좌측상단을 기준으로 함
+  9. background-size: 이미지의 크기값을 설정하는 기능, 가로/세로 비율
+     background-size: auto | cover(화면 꽉찬 이미지, 정비례) | contain(이미지 프레임 내 꽉차게) |
+     (100%) (auto);
+  10. hover,focus,active ... 등의 기능을 사용하여 전후 값 변화 및 비교 가능하도록 자연스럽게 처리
+  11. background-clip: 배경이미지의 범위를 지정하는것
+      background-clip: content-box(선, 패딩제외) | padding-box(padding까지) | border-box(외곽선까지);
+  12. background-attatchment: 배경이미지를 스크롤 위치에 따라 고정/스크롤 처리, 비권장
+      background-attatchment: scroll(기본) | fixed(브라우저 기준 위치 
+      고정)
+
+  /** 벤더 프리픽스(프리픽스) : 미지원 css 기능이 브라우저에 임시로 내장되있을 경우,
+      강제로 사용하도록 처리하는 것, 속성 앞에 벤더를 달고 (-x-) x에 지원브라우저를 정의
+      -webkit-background-clip:;
+      background-image:-webkit-linear-gradient(#caa, #a77);
+
+      -webkit-, -moz-, -ms-, -o-, 벤더X 순으로 작업, 표준으로 권고될시 프리픽스형태는 삭제
+    
+*/
+
+.image .inner { font-size:3rem; color:#137;
+  background-image:url("../../img/bg_exam/icon_01.png");}
+
+.repeat .inner { background-image: url("../../img/bg_exam/icon_02.png");
+  background-repeat: repeat-x;}
+
+.position .inner { background-image: url("../../img/bg_exam/icon_03.png");
+  background-repeat: no-repeat; 
+  background-position: 480px 400px;}
+
+.size .inner { background-image: url("../../img/bg_exam/icon_04.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100% auto;
+  transition: all 500ms ease;}
+
+.size .inner:hover { background-size: 200% auto;}
+
+.clip .inner { background-image: url("../../img/bg_exam/img_02.jpg");
+  background-repeat: no-repeat; background-position: 50% 50%; background-size: 120% auto;
+  padding:40px; border:50px dotted #eae; box-sizing:border-box;
+  font-size:5rem; font-weight:900; overflow:hidden; color:transparent;
+  -webkit-background-clip: text; 
+    -moz-background-clip: text;
+    -ms-background-clip: text;  
+    -o-background-clip: text; 
+    background-clip: text; }
+
+.attatchment { background-image: url("../../img/bg_exam/img_01.jpg");
+  background-repeat: no-repeat; background-position:50% 50%; background-size: 200% auto;
+  font-size:3rem; color:#fff; text-indent:20px;
+  background-attachment: scroll;}
