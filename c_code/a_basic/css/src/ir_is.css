@@ -8,11 +8,11 @@
 h1 { width: 100%; height:30px; font-size:1.5rem; background-color: #fa0;}
 h2 { margin-bottom:1rem;}
 
-.part { width:90%; height:auto; padding:2rem; box-sizing: border-box;
+.ir { width:90%; height:auto; padding:2rem; box-sizing: border-box;
   border:1px solid #121118; }
   .part ul { width:100%; height:auto; margin: 0; padding: 0; list-style:none;}
-  .part ul li { width:100px; height: 100px; margin-bottom:1rem; background-color: #fff;}
-  .part a {display:block; width:100%; height:100%; 
+  .ir ul li { width:100px; height: 100px; margin-bottom:1rem; background-color: #fff;}
+  .ir a {display:block; width:100%; height:100%; 
   border-radius:100%; background-color: #fdf}
 
   /** IR : 글씨를 숨기고, 이미지로 대체하여 사용하는 기법  
@@ -39,3 +39,53 @@ h2 { margin-bottom:1rem;}
   background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;}
 
 .hidden_text { position:relative; z-index:-1; width:0; height: 0;}
+
+/* ================================================================= */
+.clearfix:after, .clearfix::after {
+  content: " "; display:block; clear:both;}
+
+.is { width: 100%; height: 100%; padding:10px; box-sizing:border-box; 
+  background-color: #fcc;}
+.is li { float:left; width:67px; height:69px; margin:5px; background-color: #fc8; 
+  list-style:none; }
+.is a,
+.is_2 a { display:block; width:100%; height: 100%;}
+.is button { display:block; width:100%; height: 100%; 
+  border:0; background-color: transparent; cursor: pointer;}
+
+.is li:nth-child(n + 1):nth-child(-n + 5),
+.is li>a, .is li>button { 
+  background-image: url("../../img/bg_exam/ms_icon.png");
+  background-repeat: no-repeat; background-size: auto;}
+
+.is li span,
+.is_2 li span { display:block; width:0; height:0; overflow:hidden;}
+.is li:nth-child(2) {background-position: -222px 0;}
+.is li:nth-child(3) {background-position: 0 -111px;}
+.is li:nth-child(4) {background-position: -222px -222px;}
+.is li:nth-child(5) {background-position: -444px -222px;}
+.is li:nth-child(6) a {background-position: -442px -111px;}
+.is li:nth-child(7) a {background-position: -442px -331px;}
+.is li:nth-child(8) a {background-position: -663px -441px;}
+.is li:nth-child(9) button {background-position: -883px -441px;}
+/* .is li:nth-child(10) button {background-position: -1104px -441px;} */
+.is li:nth-child(10) button {background-position: 100% 100%;}
+
+.is_2 { width: 100%; height: 100%; padding:10px; box-sizing:border-box; 
+  background-color: #fec;}
+.is_2 li { float:left; width:75px; height:75px; margin:10px; list-style:none;}
+.is_2 li>a {  border-radius:10px; 
+  background-image: url("../../img/bg_exam/ikonate.png");
+  background-repeat: no-repeat; background-size: auto;}
+.is_2 li>a:hover, .is_2 li>a:focus {  border-radius:10px; 
+  background-image: url("../../img/bg_exam/ikonate_black.png");
+  background-repeat: no-repeat; background-size: auto;}
+
+.is_2 li:nth-child(1) a { background-position: -267px -12px;}
+.is_2 li:nth-child(2) a { background-position: -475px -12px;}
+.is_2 li:nth-child(3) a { background-position: -683px -12px;}
+.is_2 li:nth-child(4) a { background-position: -371px -325px;}
+.is_2 li:nth-child(5) a { background-position: -579px -429px;}
+.is_2 li:nth-child(6) a { background-position: -683px -429px;}
+.is_2 li:nth-child(7) a { background-position: -997px -429px;}
+

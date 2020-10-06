@@ -41,15 +41,29 @@ header,section,article,nav,main,footer,aside,figure { display: block;}
 
   #navBox { width: 100%; height: auto; padding-right:20px; box-sizing: border-box;}
   #navBox ul { width: 100%; height: auto;}
-  #navBox ul li { width: 100%; height: 40px; margin-bottom: 24px; background-repeat: no-repeat;}
-  #navBox ul li a { background-position:50% 50%; background-size: 100% auto;}
+  #navBox ul li { width: 137px; height: 36px; margin-bottom: 24px; background-repeat: no-repeat;}
+  #navBox ul li a { background-image: url(../../img/gcass1005/gnbBox.png);
+    background-size: auto;}
 
-    #navBox ul li:nth-child(1) {background-image: url("../../img/gcass1005/about.png");}
-    #navBox ul li:nth-child(2) {background-image: url("../../img/gcass1005/study.png");}
-    #navBox ul li:nth-child(3) {background-image: url("../../img/gcass1005/photo.png");}
-    #navBox ul li:nth-child(4) {background-image: url("../../img/gcass1005/blog.png");}
-    #navBox ul li:nth-child(5) {background-image: url("../../img/gcass1005/press.png");}
-    #navBox ul li:nth-child(6) {background-image: url("../../img/gcass1005/q_and_a.png");}
+    #navBox ul li:nth-child(1) a {background-position:0 0;}
+    #navBox ul li:nth-child(2) a {background-position:0 -62px;}
+    #navBox ul li:nth-child(3) a {background-position:0 -124px;}
+    #navBox ul li:nth-child(4) a {background-position:0 -186px;}
+    #navBox ul li:nth-child(5) a {background-position:0 -248px;}
+    #navBox ul li:nth-child(6) a {background-position:-20px -295px;}
+
+    #navBox ul li:nth-child(1) a:hover,
+    #navBox ul li:nth-child(1) a:focus {background-position:-140px 0;}
+    #navBox ul li:nth-child(2) a:hover,
+    #navBox ul li:nth-child(2) a:focus {background-position:-140px -62px;}
+    #navBox ul li:nth-child(3) a:hover,
+    #navBox ul li:nth-child(3) a:focus {background-position:-140px -124px;}
+    #navBox ul li:nth-child(4) a:hover,
+    #navBox ul li:nth-child(4) a:focus {background-position:-140px -186px;}
+    #navBox ul li:nth-child(5) a:hover,
+    #navBox ul li:nth-child(5) a:focus {background-position:-140px -248px;}
+    #navBox ul li:nth-child(6) a:hover,
+    #navBox ul li:nth-child(6) a:focus {background-position:-160px -295px;}
 
     #navBox ul li:nth-last-child(2) { margin-bottom: 10px; }
     #navBox ul li:last-child { margin:auto; width:120px; height:120px;}
@@ -62,18 +76,22 @@ header,section,article,nav,main,footer,aside,figure { display: block;}
 #sideBox ul li:last-child {width:245px;}
 
 #sideBox ul li a {
-  display: block; width: 100%; height: 100%; 
-  text-align: center; line-height: 30px;
-  text-transform: uppercase; font-weight: bold; color:#fff; }
+  display: block; width: 100%; height: 100%; transition: all 300ms ease;
+  background-image: url("../../img/gcass1005/sideBox.png"); }
+  #sideBox ul li a:hover { background-position-y:-35px; }
 
-#sideBox ul li:nth-child(1) { background-image: url("../../img/gcass1005/home.png"); }
-#sideBox ul li:nth-child(2) { background-image: url("../../img/gcass1005/study_side.png"); }
-#sideBox ul li:nth-child(3) { background-image: url("../../img/gcass1005/education.png"); }
+#sideBox ul li:nth-child(1) a { background-position-x:0; }
+#sideBox ul li:nth-child(2) a { background-position-x:-95px; }
+#sideBox ul li:nth-child(3) a { background-position-x:-190px; }
 
 #sideBox ul li:nth-child(1) a:hover,
-#sideBox ul li:nth-child(1) a:focus
- { background-image: url("../../img/gcass1005/home_on.png"); }
+#sideBox ul li:nth-child(1) a:focus { background-position-x:0;}
+#sideBox ul li:nth-child(2) a:hover,
+#sideBox ul li:nth-child(2) a:focus { background-position-x:-95px;}
+#sideBox ul li:nth-child(3) a:hover,
+#sideBox ul li:nth-child(3) a:focus { background-position-x:-190px;}
 
+#sideBox ul li:nth-child(1) a:hover
 /* #sideBox ul li a:hover,
 #sideBox ul li a:focus {background-color: #fff; color:#333;}
 #sideBox ul li:last-child a:hover,
@@ -87,10 +105,10 @@ header,section,article,nav,main,footer,aside,figure { display: block;}
   background-repeat: no-repeat; background-position: 0 0; opacity:0.7;}
 
 .computer { 
-  position: absolute; top:120px; left:80px; z-index:200; background-repeat: no-repeat;
+  position: absolute; top:120px; right:240px; z-index:200; background-repeat: no-repeat;
   width:330px; height:520px; background-image: url("../../img/gcass1005/com.png");}
 .adv_narr { 
-  position: absolute; top:50px; right:40px; z-index:100; background-repeat: no-repeat;
+  position: absolute; top:100px; right:40px; z-index:100; background-repeat: no-repeat;
   width:360px; height:560px; background-image: url("../../img/gcass1005/bg_text.png");}
 
 /* #footBox --------------------------------------------- */
