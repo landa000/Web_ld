@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- form_01.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/src/form_01.css">
+  <title>form_01</title>
+  <link rel="shortcut icon" href="../img/icon_03.png" type="image/png">
+  <link rel="apple-touch-icon" href="../img/icon_03.png">
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <h1><a href="./content.html">web basic</a></h1> <hr />
+    <h2>폼 이해</h2>
+      <p>정보를 입력하여 제출하기 위한 대화형 컨트롤을 포함하는 문서 구획<br />
+         사용자와 서버간 상호작용을 한다.<br />
+         주로 로그인, 회원가입, 게시판, 검색창 등의 형태</p>
+    <div class="form_area">
+      <form action="#" method="post">
+        <fieldset>
+          <legend>fieldset의 제목</legend>
+          
+          <label for="textInput">입력</label>
+          <input type="text" name="testInput"  id="testInput" value="" 
+          placeholder="이곳에 이름을 입력하세요"/>
+
+
+          <button type="submit">전송</button>
+        </fieldset>
+      </form>
+    <!-- 
+      action: data를 제출하기 위해 작성되거나, 입력된 기능을 수행하기 위한 
+      연결된 파일/서버의 매개체
+      method: data의 처리방법을 미리 정의하는 것(보안유지, 수정용, 공개용, 삭제용 ... )
+        - method는 두가지 기능만 잘 기억하자 
+        - post(로그인, 회원가입,주문) get(검색)
+
+      input 요소는 반드시 label요소와 함께사용(단, input이 버튼 역할일 경우 제외)
+      input 속성 : type-기능 name-입력/선택된 값의 저장 변수 id-label 속성인 for값과 연결(접근성으로 반드리 작성돼야함
+      value 전송될 값 자체
+      placeholder 입력창일 경우 힌트를 보이게 만드는 역할
+      required 필수 입력사항으로 체크
+      
+      
+      )
+    -->
+    </div>
+  </div>
+
+  <!-- script -->
+  <!-- <script src="파일이름.js"></script> -->
+</body>
+</html>

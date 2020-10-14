@@ -1,0 +1,20 @@
+/* form_02.css */
+
+#wrap {
+  width:960px; height:auto; margin:auto; padding: 30px 0;
+  background-color: #ddd;}
+
+.form_area { width:95%; height:auto; min-height:300px;
+  margin:auto; background-color: #ccc;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);}
+
+form { width: 100%; height: auto; min-height:400px; background-color: #fff;
+  padding: 30px; box-sizing: border-box;}
+
+fieldset { height: auto; min-height:100px; padding: 10px; box-sizing: border-box;
+  margin-bottom:30px; background-color: #d0e5e9;}
+
+fieldset li { list-style: none;}  
+
+  /* 1. form 내부에 들어가는 input, label..... inline-block
+     2. form 내부에 p,h..., dl,ul,ol... 가능 */

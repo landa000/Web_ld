@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- js_insert.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+
+  </style>
+
+  <script>
+    // 첫번째 스크립트 작성 위치
+    document.addEventListener('DOMContentLoaded', function(){
+    var wrap = document.getElementById('wrap');
+    wrap.style.backgroundColor = "#fca";
+  });
+  </script>
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <header id="headBox">
+      <h1><a href="./content.html">javascript</a></h1><hr />
+    </header>
+    <script>
+      // 두번째 스크립트 작성 위치
+      // 하나의 요소가 끝날때마다 매번 작성해야하고,
+      // html 요소가 아닌 다른 언어를 포함하여, 다소 구분하기 어렵다.
+      var headBox = document.getElementById('headBox');
+      headBox.style.backgroundColor = "#caf";
+    </script>
+    <section id="viewBox">
+      <h2>section</h2>
+    </section>
+    <article id="contentBox">
+
+    </article>
+  </div>
+
+  <!-- script -->
+  <script>
+    // 세번째 스크립트 작성 위치
+    // 두번째처럼 html 문서 내부에 작성하므로 매우 복잡
+  var viewBox = document.getElementById('viewBox');
+  viewBox.style = "background-color:#777; color:#fff;";
+  </script>
+  <!-- 네번째 src 속성을 사용하여 외부 js파일을 불러오는 형식
+  단, script 내부에 글 작성 X -->
+  <script src="../js/js_insert.js">
+
+  </script>
+</body>
+</html>

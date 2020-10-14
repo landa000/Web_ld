@@ -9,7 +9,7 @@ background-color: #888; }
   background-color: #fff30d;}
 
 .side_menu li { float:left; width:90px; height:100%;
-  text-align:center; line-height:30px; font-family: Arial, sans-serif;
+  text-align:center; line-height:30px; 
   color:#fff;}
 .side_menu li:nth-child(1) { background-color:#888;}
 .side_menu li:nth-child(2) { background-color:#575757;}
