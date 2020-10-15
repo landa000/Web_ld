@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- form_05.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../font/fontawesome/css/all.css">
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+
+  <link rel="stylesheet" href="../css/src/form_05.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <form action="#" method="POST">
+      <fieldset class="user_login">
+        <div class="logo">
+          <a href="#"><span class="hidden_context">쿠팡</span></a>
+        </div>
+        <legend class="hidden_context">쿠팡 로그인</legend> 
+        <ul class="login_area">
+          <li class="clearfix">
+            <div class="login_icon"><span class="hidden_context">Id_icon</span>
+              <i class="far fa-envelope"></i>
+            </div>
+            <label for="userId"></label>
+            <input type="text" id="userId" name="userId"
+            value="" placeholder=" 아이디(이메일)" />
+          </li>
+          <li class="clearfix">
+            <div class="login_icon"><span class="hidden_context">Pw_icon</span>
+              <i class="fas fa-lock"></i>
+            </div>
+            <label for="userPw"></label>
+            <input type="password" id="userPw" name="userPw"
+             value="" placeholder=" 비밀번호" />
+             <input type="checkbox" id="testCheck" class="hidden_context">
+             <label for="testCheck">
+              <!-- <i class="fas fa-eye"></i> -->
+              <span class="hidden_context">체크</span>
+             </label>
+          </li>         
+        </ul>
+<!-- =========================================== -->
+        <ul class="check_area">
+          <li>
+            <input type="checkbox" name="autoLogIn">
+            <label for="autoLogIn">자동로그인</label>
+          </li>
+          <li>
+            <a href="#">아이디(이메일)/비밀번호 찾기</a>
+          </li>
+        </ul>
+
+        <input type="submit" value="로그인">
+        
+      </fieldset> <!-- =========================================== -->
+
+      <fieldset class="sign_up">
+        <legend class="hidden_context">회원가입</legend>
+        <ul>
+        <li>
+          <a href="#"><span>회원가입</span></a>
+        </li>
+        <li>
+          <p>Coupang Corp. All rights reserved.</p>
+        </li>
+        </ul>
+      </fieldset><!-- =========================================== -->
+    </form>
+  </div>
+
+  
+</body>
+</html>

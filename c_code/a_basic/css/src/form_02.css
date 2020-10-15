@@ -16,5 +16,7 @@ fieldset { height: auto; min-height:100px; padding: 10px; box-sizing: border-box
 
 fieldset li { list-style: none;}  
 
+input[type="image"] {width:50px; height: auto;}
+
   /* 1. form 내부에 들어가는 input, label..... inline-block
      2. form 내부에 p,h..., dl,ul,ol... 가능 */

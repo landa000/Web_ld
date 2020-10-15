@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/* form_05.css */
+
+#wrap { width: 460px; height:480px; margin:auto;
+  padding:40px 0px; box-sizing: border-box;}
+
+.user_login { width: 100%; height:294px; 
+  border-bottom:1px solid #444;}
+.user_login .logo { width:203px; height:45px; margin:auto;
+  margin-bottom:15px;
+  background-repeat: no-repeat;
+  background-image: url("../../img/coupang_logo.png");}
+  .user_login .logo a { display:block; width:100%; height:100%;}
+
+.login_area { width:100%; height:113px; margin-bottom:12px;}
+.login_area li { height:auto; border: 1px solid #ddd;}
+.login_area li:first-child { margin-bottom:13px;}
+.login_icon { float:left; width:46px; height:50px;
+  padding:11px 11px; box-sizing:border-box;
+   background-color: #eeeef9;}
+   .login_icon i { font-size:24px; color:#888;}
+
+.login_area input { float:left; width:412px; height:50px; padding: 0 10px;
+  box-sizing:border-box;}
+.login_area input[type="password"] { width:365px;}
+.login_area label { float:right; width:46px;}
+/* .login_area input[type="checkbox"] { float:right; width:46px; height:100%;} */
+
+/* ======================================================= */
+
+.check_area li { font-size:0.9rem; text-decoration:none;
+  }
+
+  .check_area li:first-child { float:left; width:106px; height:24px;}
+  .check_area li:last-child { float:right; width:202px; height:24px;}
+
+.user_login input[type="submit"] { width:100%; height:52px;
+  color:#fff; margin-top:14px; font-weight:600;
+  font-size:1.0rem;
+  background-color: #0074e9;}
+
+/* ================================================== */
+
+.sign_up { width:100%; height:146px;
+  padding-top:19px; box-sizing: border-box;}
+
+.sign_up li:first-of-type a { display:block; padding: 15px 196px;
+  background-color: #fff; margin-bottom:24px;
+  font-weight:600;
+  color: #0074e9; border: 1px solid #999;} 
+
+.sign_up p { font-size: 0.8rem; text-align: center;}

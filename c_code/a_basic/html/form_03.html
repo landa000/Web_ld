@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- form_03.html-->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>웹기초 - 페이지이동 목차</title>
+  <link rel="stylesheet" href="../css/src/form_03.css">
+
+  <link rel="shortcut icon" href="../img/icon_03.png" type="image/png">
+  <link rel="apple-touch-icon" href="../img/icon_03.png">
+</head>
+<body>
+  <div id="wrap">
+    <h1><a href="./content.html">web basic</a></h1> <hr />
+    <div class="form_area">
+      <form action="#" method="post">
+        <fieldset>
+          <h3>소셜로그인</h3>
+          <ul class="social_btn clearfix hidden_wrap">
+            <li>
+              <button type="button"><span>naver</span></button>
+            </li>
+            <li>
+              <button type="button"><span>facebook</span></button>
+            </li>
+            <li>
+              <button type="button"><span>google</span></button>
+           </li>
+          </ul>
+          <ul class="login_area clearfix">
+            <li>
+              <label for="userId"></label>
+              <input type="text" name="userId" id="userId" value=""
+              placeholder=" 이메일 / 아이디" required />
+            </li>
+            <li>
+              <label for="userPw"></label>
+              <input type="password" name="userPw" id="userPw" value=""
+              placeholder=" 패스워드" required />
+            </li>
+              <button type="submit">로그인</button>
+          </ul>
+          <ul class="signup_area">
+            <li>
+              <a href="#">회원가입</a>
+            </li>
+            <li>
+              <a href="#">아이디/비밀번호 찾기</a>
+            </li>
+          </ul>
+        </fieldset> 
+        
+      </form>
+
+    </div>
+
+  </div>
+</body>
+</html>
