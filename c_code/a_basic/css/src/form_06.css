@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* form_06.css */
+
+
+#wrap { width:460px; height:auto; margin:auto; padding-top:30px;
+  box-sizing:border-box; font-family: notosansKR, sans-serif;}
+
+#headBox { width:100%; height:45px; margin-bottom:20px;}
+  h1 { width:195px; height:100%; margin:auto;}
+  h1 a { background-size: contain; 
+    background-position: 0 0;
+    background-image: url("../../img/coupang_logo.png");}
+
+/* ============================================================= */
+
+#signUpBox { width:100%; height:auto; min-height:303px;}
+
+.signUp_area ul { width:100%; height:auto;}
+  .signUp_area ul > li { width:100%; height:50px; margin-bottom:13px;}
+  .signUp_area ul > li input { width:412px; height:50px;
+  border:0; padding: 0; line-height:50px;}
+  
+  .signUp_area label:first-of-type { float:left; width:45px;  height:50px;
+    background-color: #efefef; border-right:1px solid #888;
+    color:#bbb; font-size:1.625rem; line-height: 58px;
+    text-indent: 0.3rem;}
+
+.input_wrap { width:100%; height:auto; border:1px solid #888;
+  box-sizing: border-box;}
+.data_narr { display:none;}
+.data_narr a:focus,
+.data_narr a:hover { display:block;}
+
+
+
+/* =================================================================== */
+
+.signUp_confirm { width:100%; height:auto; margin-bottom:25px;}
+.signUp_confirm input { width:100%; height:50px; border:0;
+  margin-bottom:10px; box-shadow: 0 2px #0034c8;
+  color:#fff; font-weight:700;
+  background-color: #0074e9;}
+.signUp_confirm p { width:100%; height:auto; font-size:0.875rem;}
+.signUp_confirm p > a { text-decoration: none; color:#000;
+  border-bottom: 1px solid #000;}
+.signUp_confirm p > a:focus,
+.signUp_confirm p > a:hover { font-weight:600; border-bottom: 1px solid #000;}
+
+/* =================================================================== */
+
+#footBox { width:100%; height:auto;}
+#footBox p { width:100%; height:auto; text-align: center;
+  font-size:0.825rem;}

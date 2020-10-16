@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- 문서이름.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../font/fontawesome/css/all.css">
+  <link rel="stylesheet" href="../font/noto_sans/noto_sans.css">
+
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/form_06.css">
+  <title>form_06</title>
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <header id="headBox">
+      <h1 class="hidden_wrap">
+        <a href="#"><span>쿠팡</span></a>
+      </h1>
+    </header>
+
+    <article id="signUpBox">
+      <fieldset class="signUp_area">
+        <legend>회원 정보 입력</legend>
+        <ul>
+          <li>
+            <div class="input_wrap claerfix">
+            <label for="userId">
+              <i class="far fa-envelope"></i>
+            <span class="hidden_context">사용자 아이디</span>
+            </label>
+            <input type="text" id="userId" name="userId" value=""
+            placeholder="아이디(이메일)" required/>
+          </div>
+          <p class="data_narr">이메일을 올바르게 입력해주세요.</p>
+          </li>
+          <li>
+            <div class="input_wrap claerfix">
+            <label for="userPw">
+              <i class="fas fa-lock"></i>
+            <span class="hidden_context">사용자 비밀번호</span>
+            </label>
+            <input type="text" id="userPw" name="userPw" value=""
+            placeholder="비밀번호" required/>
+          </div>
+          <p class="data_narr">영문/숫자/특수문자 2가지 이상 조합(8~20자)</p>
+          <p class="data_narr">3개 이상 연속되거나동일한 문자/숫자 제외</p>
+          <p class="data_narr">아이디(이메일) 제외</p>
+          </li>
+          <li>
+            <div class="input_wrap claerfix">
+            <label for="userPw_2">
+              <i class="fas fa-lock"></i>
+            <span class="hidden_context">사용자 비밀번호 확인</span>
+            </label>
+            <input type="text" id="userPw_2" name="userPw_2" value=""
+            placeholder="비밀번호확인" required/>
+          </div>
+          <p class="data_narr">새 비밀번호가 일치하지 않습니다.</p>
+          </li>
+          <li>
+            <div class="input_wrap claerfix">
+              <label for="userName">
+                <i class="far fa-user"></i>
+              <span class="hidden_context">사용자 이름</span>
+              </label>
+              <input type="text" id="userName" name="userName" value=""
+              placeholder="이름" required/>
+          </div>
+          <p class="data_narr">이름을 정확히 입력하세요.</p>
+          </li>
+          <li>
+            <div class="input_wrap claerfix">
+            <label for="mobileN">
+              <i class="fas fa-phone-alt"></i>
+            <span class="hidden_context">사용자 휴대전화번호</span>
+            </label>
+            <input type="text" id="mobileN" name="mobileN" value=""
+            placeholder="휴대폰 번호" required/>
+          </div>
+          <p class="data_narr">휴대폰 번호를 정확하게 입력하세요.</p>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="signUp_confirm clearfix">
+        <legend>가입 확인</legend>
+          <input type="submit" value="동의하고 가입하기">
+          <p>본인은 <b>만 14세 이상이며</b>,
+            <a href="#">쿠팡 이용약관</a>,
+            <a href="#">전자금융거래이용약관</a>,
+            <a href="#">개인정보 수집 및 이용</a>,
+            <a href="#">개인정보 제공</a>,
+            내용을 확인 하였으며,
+            <b>동의합니다.</b>
+          </p>
+      </fieldset>
+    </article>
+    <footer id="footBox">
+      <p>ⓒCoupang Corp. All rights reserved.</p>
+    </footer>
+  </div>
+  <!-- script -->
+</body>
+</html>
