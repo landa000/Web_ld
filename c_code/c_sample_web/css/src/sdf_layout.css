@@ -1,0 +1,67 @@
+/* sdf_layout.css */
+@charset "UTF-8";
+
+#wrap { width:100%; height:100%;}
+
+/* ======================================== */
+
+#headBox { width:100%; min-width:1200px; height:105px;
+  background-color:#000;}
+.langBox { width:100%; min-width:1200px; height:40px;
+  background-color: #fff;}
+
+.head_wrap { width:95%; height:auto; margin:auto; padding-top:20px;}
+.head_wrap h1 { float:left; width:84px; height:30px; background-color: #fff;}
+  .glonavBox { float:left; width:600px; height:auto; margin-left:15%;}
+  .glonavBox li { float:left; width:auto; height:30px; 
+    margin-right:22px; color:#fff;}
+  .glonavBox li:last-child { margin-right:0;}
+
+  .snsBox { float:right; width:120px; height:30px; 
+    padding-top:7px; box-sizing:border-box; }
+  .snsBox li { float:left; width:22px; height:17px; 
+    margin:0 4px;
+    background-color:#fff;}
+
+
+/* ======================================== */
+
+#viewBox { width:100%; min-width:1200px; height:520px;
+  background-color: #adf;}
+
+/* ======================================== */
+
+#contentBox { position:relative;
+  width: 100%; min-width:1200px; height:auto; min-height:2100px; margin:auto;}
+
+.fair_applyBox { position:absolute; top:-55px; left:55px;
+  width:20%; max-width: 240px; height:185px; 
+  background-color: #e50112;}
+
+.fair_infoBox { width:100%; min-width:1200px; height:355px;
+  padding:0 55px; box-sizing: border-box;}
+  .info_2020_link { float:left; width:20%; height:200px; 
+    margin-top:155px;}
+  .info_text_area { float:right; width:70%; height:280px;
+    margin-top:75px; background-color: #adf;}
+.fair_picBox { width:100%; min-width:1200px; height:400px;
+  background-color: #ffa;}
+
+.fair_brandBox { width:100%; min-width:1200px; height:auto;}
+  .brand_textBox { width:100%; height:230px;}
+  .brand_textBox > ul { float:right; width:482px; height:138px;
+    background-color: #fda;}
+  .brand_listBox { width:100%; height:auto;}
+  .brand_listBox li { width:100%; height:85px;}
+
+/* ======================================== */
+
+#news_subBox { width:100%; height:250px; padding-top:60px;
+  box-sizing:border-box;
+  background-color: #56575a;}
+#news_subBox h2 { width:100%; height:auto; text-align: center; color:#fff;}
+
+/* ======================================== */
+
+#footBox { width:100%; min-width:1200px; height:330px;
+  background-color: #e50112;}
