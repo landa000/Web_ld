@@ -1,0 +1,43 @@
+/* sdf_web/e_footer.css */
+
+
+#newsBox { width:100%; height:auto; padding: 3.9375rem 0 4.375rem;
+  box-sizing: border-box;
+  background-color: #666;}
+
+  .news_area { width:31.5625rem; height:7.5rem; margin:auto;}
+  #newsBox h2 { width:100%; height:2.5rem; margin-bottom:1.6875rem;
+    text-align: center; font-size: 1.5rem ; color:#fff;
+    font-weight:600;line-height:1.5rem;}
+
+  .subscribe_part { width:100%; height:3.375rem; padding:0.125rem;
+    box-sizing: border-box;}
+  .subscribe_part form,
+  .subscribe_part fieldset { width: 100%; height: 100%;}
+
+  #myEmail { float:left; width:24rem; height:100%;
+    border:0.125rem solid #777;
+    border-right:0; box-sizing: border-box; cursor: text;
+    border-top-left-radius:1.5rem; border-bottom-left-radius:1.5rem;
+    background-color: #38393a;}
+  #myEmail::placeholder { color:#a5a4a4; }
+  .subscribe_part input[type="submit"] 
+    { float:right; width:7.25rem; height:100%; border:0;
+      border:0.125rem solid #777; font-weight:700;
+      box-sizing: border-box;
+      border-top-right-radius:1.5rem; border-bottom-right-radius:1.5rem;
+      background-color: #e50112; color:#fff; cursor: pointer;}
+
+      /* border-radius:0 오른위 오른아래 0*/
+
+  /*=================================================*/
+#footBox  { width:100%; height:25.3125rem; 
+  padding:2.125rem; padding-bottom:3.125rem; box-sizing:border-box;
+  background-color: #e50112;}
+
+  .info_area { float:left; width:15rem; height:100%; margin-right:1.875rem; 
+    background-color: #fdd;}
+  .address_otherLink_area { float:left; width:31.875rem; height:100%; 
+    background-color: #fdd;}
+  .indivisual_area { float:right; width:18.125rem; height:100%; 
+    background-color: #fdd;}

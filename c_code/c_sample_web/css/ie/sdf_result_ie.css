@@ -1,0 +1,42 @@
+/* sdf_result.css */
+@charset "UTF-8";
+
+#wrap { position:relative; 
+  width:100%; min-width:30rem; height:100%;}
+
+
+#headBox { position:absolute; top:0; left:0; z-index:1000;
+  width:100%; height:3.2rem; background-color: #fff;}
+
+  /*==========================================================*/
+#viewBox  {width: 100%; height:19.375rem; background-color: #fdf;}
+
+  /*==========================================================*/
+#fesBox { width:100%; min-width:30rem; max-width:40rem; 
+  height:auto; min-height:7.5rem; 
+  padding:2.25rem 0.75rem 1.625rem; box-sizing:border-box;}
+
+  /*==========================================================*/
+#cardImgBox { width:100%; height:auto; min-height:7.5rem;
+  background-color: #eee;}
+
+  /*==========================================================*/
+#otherBox { width:30rem; height:auto; min-height:5rem;
+  margin: auto; padding-top:0.875rem;
+  background-color: #ddd;}
+
+  /*==========================================================*/
+#sponsorBox { width:100%; min-width:30rem; max-width:40rem;
+  height:auto; min-height:12.5rem; margin: auto; 
+  padding-bottom:2rem;
+  background-color:#eef;}
+
+  /*==========================================================*/
+#newsBox { width:100%; height:6.25rem;
+  background-color: #666;}
+
+  /*==========================================================*/
+#footBox  { width:100%; height:10.125rem;
+  background-color: #e50112;}
+
+  /*==========================================================*/

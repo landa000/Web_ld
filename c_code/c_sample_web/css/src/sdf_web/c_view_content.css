@@ -1,0 +1,26 @@
+/* ./sdf_web/c_view_content.css */
+
+#viewBox { width: 100%; height:48.4375rem; background-color: #fdf;}
+
+  /*==========================================================*/
+#fesBox { width:100%; min-width:75rem; max-width:100rem; 
+  height:auto; min-height:18.75rem; 
+  padding:5.625rem 1.875rem 4.0625rem; box-sizing:border-box;}
+
+  .fes_summary_area { float:right; width:65%; min-width:48.75rem;
+    height:22.5rem; background-color: #fa0;}
+  .fes_attach_area { float: left; width:22.5%; min-width:16.875rem;
+    height:22.5rem; background-color: #faa;}
+
+  /*==========================================================*/
+#cardImgBox { position:relative;
+  width:100%; height:auto; min-height:18.75rem;
+  overflow-x:hidden;
+  background-color: #eee;}
+
+  .card_indi_area { position: absolute; bottom:3.125rem; left:50%; transform:translateX(-50%);
+    width:17.1875rem; height:1.25rem; background-color: #fff;}
+  .card_img_area { width:300%; height: 9.625rem;
+    background-color: #ded;}
+
+  /*==========================================================*/

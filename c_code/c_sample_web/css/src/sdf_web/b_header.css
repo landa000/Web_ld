@@ -1,0 +1,55 @@
+/* ./sdf_web/b_header.css */
+
+#headBox { position:absolute; top:0; left:0; z-index:1000;
+  padding-top:2.75rem; box-sizing:border-box;
+  width:100%; height:8rem; background-color: #fff;}
+
+/*==========================================================*/
+
+.head_area { position: relative;
+  width:100%; height:5.25rem; padding: 20px 34px;
+  box-sizing: border-box;
+  background-color: #000;}
+
+  h1 { float:left; width:105px; height:45px;
+    background-color: #fff;}
+
+  #gnbBox { position:absolute; top:20px; left:50%; transform:translateX(-50%);;
+      width:65%; height:45px;}
+    .title_link { width:100%; height: auto; text-align:center; 
+      white-space:nowrap;}
+    .title_link > li { position:relative; display:inline-block; height:2.8125rem; margin-right:1%;}
+    .title_link > li:last-child { margin-right:0;}
+    .title_link > li > a { padding:10px; line-height:45px;
+      color:#fff; box-sizing: border-box; font-size:1.25rem;}
+
+    .title_link > li::before { content:" "; display:block; border:1px;
+      position:absolute; top:17%; right:-5%;
+      width:2px; height:70%; background-color: rgba(255,255,255,0.4);}
+
+    .sub_link { display: none;
+      position:absolute; top:100%; left:0; padding:10px;
+      background-color: #fff;}
+
+      .title_link > li:hover > .sub_link { display: block;}
+      /* .title_link > li > a:focus { outline:5px solid #daa;}
+      .title_link > li > a:focus + .sub_link { display:block;} */
+
+      .vertical_center { position:relative;}
+      .vertical_center span { display:block;
+        position:absolute; top:50%; transform: translateY(-50%); }
+
+  #unbBox { float:right; width:10.9375rem; height:2.8125rem;
+    background-color: #fff;}
+
+  
+/*==========================================================*/
+.people_lang_area { position:absolute; top:0; left:0;
+  width:100%; height:2.75rem; box-sizing:border-box;
+  border-bottom:0.0625rem solid #a4a4a4;}
+
+
+
+
+      /* .title_link li a { display: block; width: 100%; height: 100%;
+      text-align:center; line-height:45px; font-weight:500; font-size:1.125rem; color:#fff;} */
