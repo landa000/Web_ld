@@ -18,7 +18,7 @@ table,thead,tbody,tfoot,th,td { border: 1px solid #000; boader-spacing:0; border
 
 header,nav,section,article,footer,aside,main,figure,figcaption { display:block;}
 
-a { text-decoration:none;}
+a { text-decoration:none; color:inherit;}
 button { background-color: transparent; cursor: pointer; }
 hr { border:0; margin: 0; border-bottom:1px solid #333;}
 
