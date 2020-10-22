@@ -1,0 +1,52 @@
+html,body{ width: 100%; height:100%;}
+
+#wrap { width:100%; min-width:240px; height:auto; min-height:125rem;
+  background-image: linear-gradient(45deg, #fa0 30%,#0af);}
+
+.head_wrap { position:fixed; top:0; left:0; right:0; z-index:1000;
+  width:100%; height: auto; background-color: #333;}
+#headBox { 
+  width:100%; max-width:75rem; height:3.75rem; margin:auto; 
+  padding:0.25rem 0.75rem; box-sizing: border-box;
+  color:#fa0;}
+  h1 { float:left; width:100px; height:100%;
+    background-color:#33b88f;}
+  .navBox {float:right; width:60px; height:100%;
+    background-color: #fff;}
+ 
+/* #headBox { position:fixed; top:0; left:0; right:0;
+  width:100%; max-width:75rem; margin:auto;
+  height:2.5rem; background-color: #333;
+  color:#ff0;}
+
+  #headBox::before { position:absolute; top:0; left:50%; z-index:-1;
+  transform:translate(-50%);
+  content:" "; display: block; 
+  width:100vw; height:inherit;
+  background-color: inherit;} */
+
+/* mob_v.css */
+@media screen and (max-width:29.9375rem) {
+ #headBox { height:2.5rem; min-height:2.5rem; padding:1.25vw 3.75vw 1.875vw;}
+}
+h1 { width:31.25vw;}
+/* ============================================= mob_v.css */
+
+/* mob_h.css */
+@media screen and (min-width:30rem) and (max-width:47.9375rem) {
+
+  
+}
+/* ============================================= mob_h.css */
+
+/* tab.css */
+@media screen and (min-width:48rem) and (max-width:59.9375rem) {
+
+}
+/* ============================================= tab.css */
+
+/* pc.css */
+@media screen and (min-width:60rem) {
+
+}
+/* ============================================= pc.css */
