@@ -62,24 +62,6 @@ textarea, select
 
 } */
 
-@supports (display:flex){
-  .nav { display:flex;}
-}
-
-@supports (display:grid){
-  .nav { display:grid;}
-}
-
-#logo { background-clip: text; color: #fff;}
-@supports (background-clip:text) {
-  #logo {
-    -webkit-background-clip: text; 
-    -moz-background-clip: text; 
-    -ms-background-clip: text; 
-    -o-background-clip: text; 
-    background-clip: text; 
-    color: transparent;}
-}
 /* 일반 언어형태 */
 /* if( text ){ text기능 수행}else{ text 이외의 기능 수행} */
 
