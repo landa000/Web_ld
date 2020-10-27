@@ -22,3 +22,6 @@ var navList = navBox.querySelectorAll('li');
 navList.forEach( function(data){
   data.style = 'background-color:#ffcf70; margin-bottom:5px; list-style:none;'
 });
+
+
+

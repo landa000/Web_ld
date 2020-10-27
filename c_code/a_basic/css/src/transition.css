@@ -1,0 +1,159 @@
+/* transition.css */
+@charset "UTF-8";
+
+#wrap { width:60rem; height:auto; min-height:30rem;
+  margin:auto; background-color: #dfd;}
+
+.part { width:90%; height:34rem; margin:auto;
+  border:0.0625rem solid #343; box-sizing: border-box;}
+.move_01 {width:12.5rem; height:12.5rem; background-color: #af8;
+            border-radius:100%; box-sizing: border-box;
+            transition:all 500ms ease;}
+  
+.move_01:hover { background-color: #0a7;
+            color:#fff; font-size: 1.3rem; font-weight: 700;
+            border:5px solid #ffa;
+            transition:all 150ms linear;}
+            
+.vertical_center { position:relative; text-align: center;}
+  .vertical_center span { display:block; 
+   position:absolute; top:50%; width:100%; height:0;
+   background-color: #5a8;}
+  .vertical_center span u { display:block;
+   transform:translateY(-50%); text-decoration: none;}
+
+/* ======================================= */
+
+.tr_01 { width:100%; height:auto; background-color: #fff;}
+.tr_01 > li { float:left; width:160px; height:100px; 
+  margin:10px; box-sizing: border-box; text-align: center;
+  border-radius: 50px; border:1px solid #588; 
+  background-color: #fff;}
+
+
+ .tr_01 > li:nth-child(1) { 
+   transition-property:background-color, color;
+   transition-duration:500ms;
+   transition-timing-function:ease;} 
+ .tr_01 > li:nth-child(1):hover { background-color:#f97;
+  color:#fe0;} 
+
+/* : - hover, focus, visited, linked, checked
+  :: - before, after, first-letter, first-line, placeholder, maker
+  (구형브라우저 지원X before,after 제외)
+*/
+
+.tr_01 > li:nth-child(2) { 
+  transition-property:border;
+  transition-duration:300ms;
+  transition-timing-function:linear;} 
+.tr_01 > li:nth-child(2):hover { border:5px solid #4ff;} 
+
+.tr_01 > li:nth-child(3) { 
+  transition-property:width;
+  transition-duration:100ms;
+  transition-timing-function:ease;} 
+.tr_01 > li:nth-child(3):hover { width:200px;} 
+
+.tr_01 > li:nth-child(4):hover { height:300px;
+  transition-property:height;
+  transition-duration:300ms;
+  transition-timing-function:ease-in;} 
+
+.tr_01 > li:nth-child(5):hover {
+  background-color: #531;
+  width:300px; height:300px;
+  transition-property: background-color, width,height;
+  transition-duration: 200ms;
+  transition-timing-function: ease;}
+
+.tr_01 > li:nth-child(6):hover {
+  width:500px; height:200px;
+  transition-property: all;
+  transition-duration: 900ms;
+  transition-delay: 100ms;
+  transition-timing-function: cubic-bezier(.7,.03,.92,.35);}
+
+.tr_01 > li:nth-child(7):hover {
+  width:400px; height:200px;
+  background-color: #adf;
+  transition: all 500ms ease-in 800ms;}
+
+/* timing-function 시간제어
+  ease: 감가속
+  ease-in/ease-out: 점점빠르게/점점느리게
+  ease-in-out:올랐다가 내렸다가
+  linear: 등속
+  cubic-bezier:변속
+  */
+
+.tr_01 li:last-child:hover {
+  height:500px;
+  transition:all 2000ms ease;}
+
+.tr_01 > .border-01 > span { display:block; }
+  .tr_01 > .border-01 span:nth-child(1) { float:left; width:0; height:20px;}
+  .tr_01 > .border-01:hover span:nth-child(1) { width:100%;
+    background-color:#004;
+    transition: width,background-color, 200ms ease-in;}
+  .tr_01 > .border-01 span:nth-child(2) { float:right; width:20px; height:0;}
+  .tr_01 > .border-01:hover span:nth-child(2) { height:100%;
+    background-color:#004;
+    transition: width,background-color, 200ms ease-in 200ms;}
+  .tr_01 > .border-01 span:nth-child(4) { float:right; 
+     width:0; height:20px;}
+  .tr_01 > .border-01:hover span:nth-child(4) { width:100%;
+    background-color:#004;
+    transition: width,background-color, 200ms ease-in 400ms;}
+    .tr_01 > .border-01 span:nth-child(3) { float:left; width:20px; height:0;}
+  .tr_01 > .border-01:hover span:nth-child(3) { height:100%;
+    background-color:#004;
+    transition: width,background-color, 200ms ease-in 600ms;}
+
+.box { position: relative;
+  width:400px; height:500px; margin:20px auto 500px;
+  background-color: #adf;}
+.box span { position: absolute; --size1:30px;}
+
+.box .n_1 {  top:0; left:0; 
+  width:0; height:var(--size1); background-image: linear-gradient(90deg,#01d,#01a);
+  transition: all 300ms ease 900ms;}
+.box .n_2 {  top:0; right:0;
+  width:var(--size1); height:0; background-image: linear-gradient(#01a,#017);
+  transition: all 300ms ease 600ms; }
+.box .n_3 {  bottom:0; right:0;
+  width:0; height:var(--size1); background-image: linear-gradient(180deg,#017,#014);
+  transition: all 300ms ease 300ms;}
+.box .n_4 {  bottom:0; left:0;
+  width:var(--size1); height:0; background-image: linear-gradient(#01d,#014);
+  transition: all 300ms ease 0ms;}
+
+.box:hover .n_1 { width:100%; transition: all 300ms ease 0ms; } 
+.box:hover .n_2 { height:100%; transition: all 300ms ease 300ms; } 
+.box:hover .n_3 { width:100%; transition: all 300ms ease 600ms; } 
+.box:hover .n_4 { height:100%; transition: all 300ms ease 900ms; } 
+
+/* ======================================= */
+
+.bg { width:600px; height:400px; position:relative;
+  margin:auto; margin-bottom: 400px;
+  border:3px soild #37a; background-size: auto 100%;
+  background-repeat: no-repeat; background-position: 50% 50%;
+  background-image: url("../../img/t1.daumcdn.png");}
+.bg:before { content:" "; display:block; position: absolute;
+  width:100%; height:100%; background-color:rgba(51,51,51,0.6);}
+
+:root { --transition:all 800ms ease; }
+
+.bg:hover { background-size: auto 110%;} 
+.bg:hover:before { opacity: 0;}
+.bg:hover dl { opacity: 0;}
+
+.bg,.bg:hover, .bg:hover:before, .bg dl {  transition: var(--transition);}
+
+.bg > dl{ position: absolute; top:50%;
+  transform:translateY(-50%); left:0;
+  width:100%; height:auto; text-align: center; font-weight: 700;
+  text-transform:uppercase; color:#fff;}
+.bg > dt { tab-size:2.5rem;}
+.bg > dd { tab-size:2.5rem;}
