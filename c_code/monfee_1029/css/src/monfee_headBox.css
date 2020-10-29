@@ -1,0 +1,16 @@
+/* monnfee_headBox.css */
+
+@import url("headerBox_base.css");
+@import url("pcfull");
+
+
+#headBox { width:100%; height:auto; }
+
+.head_wrap { position:absolute; top:1080px; left:0; right:0;
+  border-bottom:1px solid #888;
+  width:940px; height:120px; margin:auto;}
+
+.head_wrap h1 { float:left; width:220px; height:100%;
+  background-color: #a43300;}
+.gnvBox { float:right; width:620px; height:100%; }
+.gnvBox li { float:left; width:25%;}

@@ -1,0 +1,19 @@
+
+#bestNews { width:100%; min-width:1024px; height:1080px;  margin-top:120px; } 
+#bestNews h2 { width:970px; height:140px; margin:auto;
+  font-size:2.5rem;
+  line-height: 190px;}
+
+.menu { width:970px; height:940px; margin:auto;
+  background-color: #fff;}
+
+.menu_card { float:left; width:220px; height:392px; margin:0 10px 65px; }
+.menu_img { position: relative;
+  width:100%; height:260px; margin-bottom:20px;
+  background-repeat: no-repeat; background-size: auto 110%; background-position: 50% 50%;
+  transition:all 600ms ease;}
+.menu_img:before { position: absolute; top:0; left:0;
+  content:" "; display:none;  width:100%; height:100%; 
+  background-color: rgba(202, 117, 78, 0.6);}
+  .menu_img:hover:before { display:block; }
+  .menu_img:hover { background-size: auto 130%; transition:all 600ms ease;}

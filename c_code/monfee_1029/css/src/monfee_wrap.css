@@ -1,0 +1,7 @@
+/* monfee_wrap.css */
+
+#wrap { position:relative; width:100%; height:auto; min-height:5000px;}
+
+@media screen and ( max-width:1023px) {
+  #wrap { min-width:940px; background-color: #ccc;}
+}

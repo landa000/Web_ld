@@ -1,0 +1,11 @@
+#footBox { width:100%; min-width:1024px; height:400px; padding-top:74px;
+  box-sizing: border-box;
+  background-color: #028;}
+
+.foot_wrap { width:85vw; min-width:940px; height:auto; margin:auto;}
+.company_info { float:left; width:166px; height:60px;
+  margin-right:54px;
+  background-color: #ddf;}
+address { float:left; width:560px; height:60px;   background-color: #fff;}
+.sns { float:right; width: 340px; height: 40px;
+  background-color: #2af;}
