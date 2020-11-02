@@ -1,0 +1,10 @@
+/* monffee_wrap.css */
+
+html,body { -ms-overflow-style:none; /*ie,edge 스크롤 제거*/ 
+  scrollbar-width:none;/* firefox scroll remove */}
+html::-webkit-scrollbar, body::-webkit-scrollbar 
+{ display:none;} /* chrome,safari scroll remove */
+
+#wrap { width:100%; min-width:940px; height:auto; min-height:5000px;
+  margin:auto; background-color: #efefef; font-family: 'Nanum Gothic', sans-serif;}
+/* ====================================== */

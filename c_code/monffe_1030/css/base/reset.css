@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/* reset.css */
+
+@import url("../base/variable.css");
+
+html,body { width:100%; height:100%;
+  margin: 0; padding: 0; border: 0; font-family: san-serif; 
+  color:#333;}
+
+h1,h2,h3,h4,h5,h6,p,pre,blockquote,q,abbr,address,
+ul,ol,li,dl,dt,dd,
+button,img,hr,
+header,nav,section,article,footer,aside,main,figure,figcaption
+ { margin: 0; padding: 0; border: 0; outline: 0; }
+
+ul,ol,li { list-style:none; }
+table,thead,tbody,tfoot,th,td { border: 1px solid #000; boader-spacing:0; border-collapse:collapse;}
+
+header,nav,section,article,footer,aside,main,figure,figcaption { display:block;}
+
+a { text-decoration:none; color:inherit;}
+button { background-color: transparent; cursor: pointer; }
+hr { border:0; margin: 0; border-bottom:1px solid #333;}
+
+a:hover, a:focus, button:hover, button:focus { position:relative; z-index:500; }
+/* outline:3px solid #f70; */
+
+/* form */
+
+fieldset {margin: 0; padding: 0; border:0;}
+legend { display:block; position: absolute; z-index:-1;
+  width: 0; height: 0; overflow: hidden;}
+/* input { border:1px solid #888; box-sizing:border-box;
+  text-indent:0.5rem;} */
+
+input[type="text"],
+input[type="password"],
+input[type="search"],
+input[type="email"],
+input[type="url"],
+input[type="number"],
+input[type="tel"]
+{ border:1px solid #888; box-sizing:border-box;
+  text-indent:0.5rem; cursor: pointer;}
+
+button, input[type="submit"],
+input[type="image"], input[type="reset"]
+{ margin: 0; padding: 0; bottom: 0;
+  background-color: transparent; cursor: pointer;}
+
+textarea, select
+ { margin: 0; padding: 0; border:1px solid #888; box-sizing:border-box;}
+
+
+
+/* variable 지원 여부 파악*/
+/* @supports (--var:100%){
+  html,body {color:var(--color-font1);}
+  hr {border-bottom:var(--border-line1);}
+  a:hover, a:focus,
+  button:hover, button:focus {
+    outline:3px solid var(--color-point);}
+
+} */
+
+@supports (display:flex){
+  .nav { display:flex;}
+}
+
+@supports (display:grid){
+  .nav { display:grid;}
+}
+
+#logo { background-clip: text; color: #fff;}
+@supports (background-clip:text) {
+  #logo {
+    -webkit-background-clip: text; 
+    -moz-background-clip: text; 
+    -ms-background-clip: text; 
+    -o-background-clip: text; 
+    background-clip: text; 
+    color: transparent;}
+}
+/* 일반 언어형태 */
+/* if( text ){ text기능 수행}else{ text 이외의 기능 수행} */
+
+/* css형태 
+  일단 text { 이외의 기능수행 } 
+  @supports(text수행여부확인) {
+    수행가능한 경우 text수행
+  }
+
+*/
