@@ -5,9 +5,11 @@
 
 (function($){
   //jQuery
-
   var headBox = $('#headBox');
+  var viewBox = $('#viewBox');
+
   headBox.load('./monffee/headBox.html');
+  viewBox.load('./monffee/viewBox.html');
 })(jQuery); 
 
 // html에서 꼭 하단에 작성

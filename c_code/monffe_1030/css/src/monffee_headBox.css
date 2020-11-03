@@ -25,16 +25,16 @@
 
   #navBox dl{ width:100%; height:auto; }
   #navBox dt{  width:100%; height:120px; }
-  #navBox dt > a { position:relative; font-size:1.8rem;
+  #navBox dt > a { position:relative; font-size:1.8rem; 
     display: block; width:100%; height:100%; text-align: center;
     line-height: 120px;;}
     #navBox dt > a::after { content:" "; display:block;
       position: absolute; top:58%; margin-top:10px; left:50%; transform:translate(-50%);
       width:0; height:4px; background-color: var(--color-primary); 
-      transition: all 300ms ease;}
+      transition: all 200ms ease;}
     #navBox dt > a:hover::after { width:58%;}
 
   #navBox dd{ display:block; width:100%; height:auto; background-color: rgba(100,100,100,0.2);
-    padding:16px 0; text-align: left; text-indent:18px; font-size:1.125rem;}
+    padding:16px 0; text-align: left; text-indent:18px; font-size:1.125rem; color:var(--color-white);}
   #navBox dd > a { display: block; width:100%; height:auto; 
     padding:5px; margin-bottom: 5px; box-sizing: border-box;}

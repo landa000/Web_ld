@@ -2,11 +2,13 @@
 
 :root {
   --color-primary:#a43300;
+  --color-primary-opacity:rgba(164,51,0,0.7);
   --color-red:#c00;
   --color-yellow:#ffaf00;
   --color-mint:#3dd;
   --color-black:#171717;
-  --color-gray:#656565;
+  --color-gray1:#656565;
   --color-gray2:#bbb;
   --color-white:#fff;
+
 }
