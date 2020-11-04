@@ -5,6 +5,8 @@
 
   var backImg = viewBox.find('.back_img');
   var backLi = backImg.find('li'); 
+  var slideIndicator = viewBox.find('.slide_indicator');
+  var indiLi = slideIndicator.find('li'); // 1104 indicator 동작 
   // 순서를 언급시엔 eq()메소드를 사용 0~.... 역순은 -1~
   // 복제기능 clone() -> 복제된 기능을 원본처럼 수행하게 하려면 true 매개변수를 입력
   // 마지막요소 복제에 의한 내용변경
@@ -33,6 +35,8 @@
         backImg.stop().css({'left': slideN * -100 + '%'});
       }
     });
+    indiLi.eq(slideN).siblings().removeClass('action'); // 1104 indicator 동작 
+    indiLi.eq(slideN).addClass('action'); // 인디케이터 클릭시 action 클래스 부여
   });
   prevSlideBtn.on('click',function(e){
     e.preventDefault();
@@ -42,14 +46,44 @@
         slideN = backLi.length-1;
         backImg.stop().css({'left': slideN * -100 + '%'});
       }
+    });
+    indiLi.eq(slideN).siblings().removeClass('action'); // 1104 indicator 동작 
+    indiLi.eq(slideN).addClass('action'); // 인디케이터 클릭시 action 클래스 부여
+  });
+
+  indiLi.on('click',function(e){
+    e.preventDefault();
+    var its = $(this);
+    slideN = its.index();
+    // console.log(itsI);
+    backImg.stop().animate({'left': slideN * -100+'%'});
+    // indiLi.removeClass('action'); 클래스 삭제
+    indiLi.eq(slideN).siblings().removeClass('action');
+    indiLi.eq(slideN).addClass('action'); // 인디케이터 클릭시 action 클래스 부여
+  });
+  // ============== focus ==================
+    indiLi.children('a').on('focus', function(e){
+      e.preventDefault();
+      var its = $(this);
+      slideN = its.parent().index() // a의 부모 li의 순서를 가져옴
+      backImg.stop().animate({'left': slideN * -100+'%'});
+      // indiLi.removeClass('action'); 클래스 삭제
+      indiLi.eq(slideN).siblings().removeClass('action');
+      indiLi.eq(slideN).addClass('action'); // 인디케이터 클릭시 action 클래스 부여
     })
-  })
+
+  // var slideIndi = viewBox.find('.slide_indicator');
+  // var slideIndiA = slideIndi.find('a');
+  // slideIndiA.on('click',function(e){
+  //   e.preventDefault();})
+
   // $('li').on('click', function(){
   //   $(this).index
   // });
 
 })(jQuery);
 
+// if 조건이 제방같은 역할... 인듯.....
 
 // var reFn = function(i){
 //   i += 1
