@@ -2,9 +2,12 @@
 
 (function($){
   var viewBox = $('#viewBox');
+  viewBox.css({'overflow':'hidden'});
 
   var backImg = viewBox.find('.back_img');
   var backLi = backImg.find('li'); 
+  var permission = true;
+
   var slideIndicator = viewBox.find('.slide_indicator');
   var indiLi = slideIndicator.find('li'); // 1104 indicator 동작 
   // 순서를 언급시엔 eq()메소드를 사용 0~.... 역순은 -1~
@@ -22,33 +25,48 @@
   var slideBtn = viewBox.find('.slide_btn');
   var nextSlideBtn = slideBtn.children('button').eq(0); // 버튼
   var prevSlideBtn = slideBtn.children('button').eq(1); // 버튼
-
+  
   var slideN = 0;
   nextSlideBtn.on('click',function(e){
     // a, button 요소처럼 event 기능이 내장된 요소는 미리 해당기능을 제거
     e.preventDefault();
-    slideN += 1;
+    if(permission){
+      permission = false;
+
+      slideN += 1;
     // if(){}else{} // callback
     backImg.stop().animate({'left': slideN * -100 + '%'}, function(){
       if(slideN >= backLi.length - 1){
         slideN = -1;
         backImg.stop().css({'left': slideN * -100 + '%'});
       }
+      setTimeout(function(){
+        permission=true;
+      }, 300);
     });
-    indiLi.eq(slideN).siblings().removeClass('action'); // 1104 indicator 동작 
-    indiLi.eq(slideN).addClass('action'); // 인디케이터 클릭시 action 클래스 부여
+      indiLi.eq(slideN).siblings().removeClass('action'); // 1104 indicator 동작 
+      indiLi.eq(slideN).addClass('action'); // 인디케이터 클릭시 action 클래스 부여
+    }
   });
+
   prevSlideBtn.on('click',function(e){
     e.preventDefault();
-    slideN -= 1;
+    if(permission){
+      permission = false;
+
+      slideN -= 1;
     backImg.stop().animate({'left': slideN * -100 + '%'}, function(){
       if( slideN <= -1 ){
         slideN = backLi.length-1;
         backImg.stop().css({'left': slideN * -100 + '%'});
       }
+      setTimeout(function(){
+        permission=true;
+      }, 300); // 시간값도 변수화 시키는게 좋음
     });
     indiLi.eq(slideN).siblings().removeClass('action'); // 1104 indicator 동작 
     indiLi.eq(slideN).addClass('action'); // 인디케이터 클릭시 action 클래스 부여
+    }
   });
 
   indiLi.on('click',function(e){
