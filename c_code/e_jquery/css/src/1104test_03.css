@@ -1,0 +1,35 @@
+/* 1104test_03.css */
+
+.miniProduct { position:relative;
+  width:400px; height:300px; margin:auto;}
+
+.slide_btn { position:absolute; top:50%; left:50%; z-index:500;
+  transform:translateX(-50%);
+  width:115%; height:0;}
+.slide_btn button { float:right; width:60px; height:60px;  
+  transform:translateY(-50%);
+  border-radius:30px; background-color:#888;}
+.slide_btn button:hover { opacity:0.8; }
+.slide_btn button:last-child { float:left; }
+
+.indicator { position:absolute; bottom:20px; left:50%; transform: translateX(-50%);
+  z-index:500;
+  width:194px; height:auto; border-radius: 26px; padding:5px;
+  background-color: #777;}
+.indicator li { float:left; width:26px; height:26px; margin-right:16px;}
+.indicator li a { width:100%; height:100%; border-radius:15px;
+  background-color: #eee;}
+.indicator li.action a { background-color: #fd0;}
+.indicator li:last-child { margin-right:0;}
+
+.product_wrap { position:relative; width:100%; height:100%; overflow:hidden;}
+.product { position:absolute; z-index:100; width:100%; height:100%;}
+.product li { float:left; width:100%; height:100%;}
+.product li a { display:block; width:400px; height:300px;
+  background-repeat: no-repeat; background-position: 50% 50%; background-size: auto 70%;}
+
+.product li.view_01 a { background-image: url("../../img/1104/cake_01.jpg");}
+.product li.view_02 a { background-image: url("../../img/1104/cake_02.jpg");}
+.product li.view_03 a { background-image: url("../../img/1104/cake_03.jpg");}
+.product li.view_04 a { background-image: url("../../img/1104/cake_04.jpg");}
+.product li.view_05 a { background-image: url("../../img/1104/cake_05.jpg");}

@@ -41,7 +41,7 @@
 .back_img li.view_02 { background-color: #a35;}
 .back_img li.view_03 { background-color: #a46;}
 .back_img li.view_04 { background-color: #a57;}
-.back_img li.view_05 { background-color: #a79;} /* 사용X */
+.back_img li.view_05 { background-color: #a79;} /* nth-child 사용X */
 
 
 

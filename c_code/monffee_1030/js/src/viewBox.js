@@ -1,6 +1,46 @@
 // viewBox.js
 
+
+// var count = 0;
+// setTimeout(function(){},100);
+// setInterval(function(){
+//   count += 1;
+//   console.log(count);
+// },1600); // (숫자)마다 기능을 수행해라
+// clearInterval(setInterval함수이름);
+
+// var Go = setInterval(function(){
+//   count += 1;
+//   console.log(count);
+//   if(count >= 20){
+//     clearInterval(Go);
+//   }
+// },500);
+// trigger.선택자('click')
+
+
 (function($){
+
+/*  var count = 0;
+  var Start;
+
+  var Mycount = function(){  
+    Start = setInterval(function(){
+    count += 1;
+    console.log( count );
+  }, 1700);
+  };
+
+  Mycount();
+
+  $('h1').on('mouseenter',function(){
+    clearInterval(Start);
+  });
+  $('h1').on('mouseleave',function(){
+    count = 0;
+    Mycount();
+  }); */
+
   var viewBox = $('#viewBox');
   viewBox.css({'overflow':'hidden'});
 
@@ -13,7 +53,7 @@
   // 순서를 언급시엔 eq()메소드를 사용 0~.... 역순은 -1~
   // 복제기능 clone() -> 복제된 기능을 원본처럼 수행하게 하려면 true 매개변수를 입력
   // 마지막요소 복제에 의한 내용변경
-  console.log(backLi.length);
+  // console.log(backLi.length);
   var backLiLast = backLi.eq(-1).clone();
   backImg.prepend(backLiLast);
   var reBackLi = backImg.find('li'); // 복제 후 갯수 재파악
@@ -27,6 +67,9 @@
   var prevSlideBtn = slideBtn.children('button').eq(1); // 버튼
   
   var slideN = 0;
+  var timed = 2000;// 일정시간
+
+// 다음버튼 ============================================
   nextSlideBtn.on('click',function(e){
     // a, button 요소처럼 event 기능이 내장된 요소는 미리 해당기능을 제거
     e.preventDefault();
@@ -49,6 +92,7 @@
     }
   });
 
+// 이전버튼 ============================================
   prevSlideBtn.on('click',function(e){
     e.preventDefault();
     if(permission){
@@ -68,7 +112,7 @@
     indiLi.eq(slideN).addClass('action'); // 인디케이터 클릭시 action 클래스 부여
     }
   });
-
+// indicator ============================================
   indiLi.on('click',function(e){
     e.preventDefault();
     var its = $(this);
@@ -79,7 +123,7 @@
     indiLi.eq(slideN).siblings().removeClass('action');
     indiLi.eq(slideN).addClass('action'); // 인디케이터 클릭시 action 클래스 부여
   });
-  // ============== focus ==================
+// ============== focus ==================
     indiLi.children('a').on('focus', function(e){
       e.preventDefault();
       var its = $(this);
@@ -89,6 +133,43 @@
       indiLi.eq(slideN).siblings().removeClass('action');
       indiLi.eq(slideN).addClass('action'); // 인디케이터 클릭시 action 클래스 부여
     })
+
+  var startInterval; // 움직임 변수 정의
+  var Start = function(){
+    startInterval = setInterval(function(){
+      // // trigger() 기능 - 대신 처리해주는 방아쇠
+      // nextSlideBtn.trigger('click'); 1. 트리거 방식
+
+      // 2. 직접 카운트 처리
+      slideN += 1;
+      backImg.stop().animate({'left': slideN * -100 + '%'}, function(){
+        if(slideN >= backLi.length - 1){
+          slideN = -1;
+          backImg.stop().css({'left': slideN * -100 + '%'});
+        }
+      });
+        indiLi.eq(slideN).siblings().removeClass('action'); 
+        indiLi.eq(slideN).addClass('action'); 
+    },timed);
+  };
+
+  Start();
+  
+ var StopSlide = function(){
+   clearInterval(startInterval);
+ };
+  // viewBox.on('mouseenter', function(){
+  //   StopSlide();
+  // });
+  // viewBox.on('mouseleave', function(){
+  //   Start();
+  // });
+// 위 기능 통합
+ viewBox.on({
+   'mouseenter':StopSlide,
+   'mouseleave':Start
+ })
+
 
   // var slideIndi = viewBox.find('.slide_indicator');
   // var slideIndiA = slideIndi.find('a');
