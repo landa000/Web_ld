@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- 문서이름.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../font/fontawesome/css/all.css">
+
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/ex_01_accordion.css">
+  <title>accordion menu</title>
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <h1><a href="./content.html">jQuery</a></h1> <hr />
+    <div class="part">
+      <h2>아코디언메뉴 세로형 만들기</h2>
+      <div class="accordion_01">
+        <dl>
+          <dt><button type="button">Title01<i class="fas fa-arrow-circle-down"></i></button></dt>
+          <dd>Subject01</dd>
+        </dl>
+        <dl>
+          <dt><button type="button">Title02<i class="fas fa-arrow-circle-down"></i></button></dt>
+          <dd>Subject02</dd>
+          <dd>Subject02</dd>
+        </dl>
+        <dl>
+          <dt><button type="button">Title03<i class="fas fa-arrow-circle-down"></i></button></dt>
+          <dd>Subject_01</dd>
+          <dd>Subject_02</dd>
+          <dd>Subject_03</dd>
+        </dl>
+        <dl>
+          <dt><button type="button">Title04<i class="fas fa-arrow-circle-down"></i></button></dt>
+          <dd>Subject04</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <!-- script -->
+  <script src="../js/base/jquery-3.5.1.js"></script>
+  <script src="../js/base/jquery-ui.js"></script>
+  <script src="../js/src/ex_01_accordion.js"></script>
+</body>
+</html>
