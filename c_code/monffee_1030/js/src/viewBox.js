@@ -67,7 +67,7 @@
   var prevSlideBtn = slideBtn.children('button').eq(1); // 버튼
   
   var slideN = 0;
-  var timed = 2000;// 일정시간
+  var timed = 3500;// 일정시간
 
 // 다음버튼 ============================================
   nextSlideBtn.on('click',function(e){
