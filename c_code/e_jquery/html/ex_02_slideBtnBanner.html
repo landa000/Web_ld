@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- ex_02_slideBtnBanner.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../font/fontawesome/css/all.css">
+
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/ex_02_slideBtnBanner.css">
+  <title>slideBtnBanner</title>
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <h1><a href="./content.html">jQuery</a></h1> <hr />
+    <div class="part slide_01">
+      <h2>좌,우 슬라이드 배너 만들기</h2>
+      <div class="slide_btn">
+        <button type="button" class="next_btn">
+          <i class="fas fa-arrow-circle-right"></i>
+          <span class="hidden_context">next_view</span></button>
+        <button type="button" class="prev_btn">
+          <i class="fas fa-arrow-circle-left"></i>
+          <span class="hidden_context">prev_view</span></button>
+      </div>
+      <div class="slide_wrap">
+        <ul>
+          <li class="product_01"><a href="#"><span>product_01</span></a></li>
+          <li class="product_02"><a href="#"><span>product_02</span></a></li>
+          <li class="product_03"><a href="#"><span>product_03</span></a></li>
+          <li class="product_04"><a href="#"><span>product_04</span></a></li>
+          <li class="product_05"><a href="#"><span>product_05</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- script -->
+  <script src="../js/base/jquery-3.5.1.js"></script>
+  <script src="../js/base/jquery-ui.js"></script>
+  <script src="../js/src/ex_02_slideBtnBanner.js"></script>
+</body>
+</html>
