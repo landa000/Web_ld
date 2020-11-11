@@ -75,7 +75,7 @@ slide01Btn.children('.prev_btn').on('click',function(e){
           slideN += 1;
               // 기존보다 값을 1 줄였으므로 공백구간이 사라짐
               // css 값을 먼저 앞의 배치함으로 위치값 -> animate 순으로 처리하게 만듦
-              // 둘중 하나만 처리하면 ㅇㅋ
+              // 전,후 둘중 하나만 처리하면 ㅇㅋ
         }else if(itClass === 'prev_btn'){// 이전 버튼
           slideN -= 1;
           }

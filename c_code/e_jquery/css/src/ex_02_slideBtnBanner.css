@@ -1,11 +1,11 @@
 /* ex_02_sideBtnBanner.css */
 
 #wrap { width:960px; height:auto; min-height:31.25rem;
-  margin:auto; background-color: #eee;}
+  margin:auto; margin-bottom:30rem; background-color: #eee;}
 
 .part { position:relative; 
-  width:28rem; height:18.75rem; margin:auto; padding:0.5rem;
-  box-sizing: border-box; background-color: #ddb088;
+  width:28rem; height:18.75rem; margin:auto; margin-bottom:2rem;
+  padding:0.5rem; box-sizing: border-box; background-color: #ddb088;
   ;}
 
 .slide_btn { position:absolute; top:50%; left:50%; z-index:500;
@@ -16,20 +16,55 @@
     font-size:1.8rem; line-height:1.8rem; text-align: center;}
   .slide_btn > button.next_btn { float:right;}
 
-.slide_wrap { width:25rem; height:15rem; margin:auto;  overflow: hidden;
+.slide_wrap { width:25rem; height:15rem; margin:auto; overflow: hidden;
   border:1px solid #333;}
-  .slide_wrap ul { width:500%; height:100%; }
-  .slide_wrap li { float:left; width:20%; height:100%; padding-top:195px;
-    box-sizing: border-box;
-    background-repeat: no-repeat; background-position: 50% 25%;
-    background-size: 50% auto; text-align:center;
-    background-color: #fff}
-  .slide_wrap li a { padding:0.3rem 1.5rem;
-    color: #fff; border-radius:2rem; 
-    background-color: #d86;}
+.slide_wrap li { height:100%; padding-top:195px;
+  box-sizing: border-box; 
+  background-repeat: no-repeat; background-position: 50% 0%;
+  background-size: 50% auto; text-align:center;
+  background-color: #fff;}
+.slide_wrap li a { padding:0.3rem 1.5rem;
+
+    color: #fff; border-radius:2rem; background-color: #d86;}
+  .horizontal_slide ul { width:500%; height:100%; }
+  .horizontal_slide li { float:left; width:20%;}
+
 
   .product_01 { background-image: url("../../img/1104/cake_01.jpg");}
   .product_02 { background-image: url("../../img/1104/cake_02.jpg");}
   .product_03 { background-image: url("../../img/1104/cake_03.jpg");}
   .product_04 { background-image: url("../../img/1104/cake_04.jpg");}
   .product_05 { background-image: url("../../img/1104/cake_05.jpg");}
+
+/* ============================================================= */
+
+.slide_02 { background-color: #7a8; height:21rem;}
+.slide_02 h2 { color:#fff; font-size: 1.1rem; margin-bottom:0.5rem; padding-left:1rem;}
+
+.slide_02 .slide_btn { top:2.9rem; left:auto; right:1.5rem; width:4.375rem; 
+  transform: translate(0); color:#fff;}
+.slide_02 button { color:#ffe; font-size:2rem}
+
+.slide_02 .slide_wrap { border-radius:1rem; overflow:hidden; border:0;
+  box-shadow:0 0 0.5rem #333;}
+.slide_02 .slide_wrap li a { box-sizing: border-box;}
+
+.index_slide ul { position:relative; z-index:50; width: 100%; height: 100%; }
+.index_slide li { position:absolute; width:100%;}
+  .index_slide li.action { z-index:200;}
+
+/* ============================================================= */
+
+.indicator_horizontal_slide { position:relative; padding-bottom:2.5rem;}
+
+.indicator_horizontal_slide .indicator {
+  position:absolute; bottom:0.5rem; left:50%; transform: translate(-50%);
+  width:100%; height:1.5rem; text-align: center;}
+
+  .indicator li { display: inline-block; margin:0 0.5rem; width:1.5rem; height:1.5rem; }
+  .indicator li a { display: block; width:100%; height:100%; border-radius:100%;
+    background-color: #57c;}
+  .indicator li.action a {background-color: #333;}
+
+  .indicator_horizontal_slide .slide_wrap ul { width:500%; height:100%;}
+  .indicator_horizontal_slide .slide_wrap li { float:left; width:20%;}

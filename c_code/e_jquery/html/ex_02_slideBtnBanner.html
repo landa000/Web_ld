@@ -12,8 +12,8 @@
 </head>
 <body>
   <!-- layout -->
-  <div id="wrap">
-    <h1><a href="./content.html">jQuery</a></h1> <hr />
+<div id="wrap">
+  <h1><a href="./content.html">jQuery</a></h1> <hr />
     <div class="part slide_01">
       <h2>좌,우 슬라이드 배너 만들기</h2>
       <div class="slide_btn">
@@ -24,7 +24,7 @@
           <i class="fas fa-arrow-circle-left"></i>
           <span class="hidden_context">prev_view</span></button>
       </div>
-      <div class="slide_wrap">
+      <div class="slide_wrap horizontal_slide">
         <ul>
           <li class="product_01"><a href="#"><span>product_01</span></a></li>
           <li class="product_02"><a href="#"><span>product_02</span></a></li>
@@ -34,11 +34,68 @@
         </ul>
       </div>
     </div>
+
+  <!-- ============================================================= -->
+
+  <div class="part slide_02">
+    <h2>좌,우 슬라이드 배너 만들기<br /> - fade처리</h2>
+    <div class="slide_btn">
+      <button type="button" class="next_btn">
+        <i class="fas fa-arrow-circle-right"></i>
+        <span class="hidden_context">next_view</span></button>
+      <button type="button" class="prev_btn">
+        <i class="fas fa-arrow-circle-left"></i>
+        <span class="hidden_context">prev_view</span></button>
+    </div>
+    <div class="slide_wrap index_slide">
+      <ul>
+        <li class="product_01 action"><a href="#"><span>product_001</span></a></li>
+        <li class="product_02"><a href="#"><span>product_002</span></a></li>
+        <li class="product_03"><a href="#"><span>product_003</span></a></li>
+        <li class="product_04"><a href="#"><span>product_004</span></a></li>
+        <li class="product_05"><a href="#"><span>product_005</span></a></li>
+      </ul>
+    </div>
   </div>
+  <!-- ============================================================= -->
+
+  <div class="part indicator_horizontal_slide">
+    <h2>인디케이터 좌우 슬라이드 배너</h2>
+    <ul class="indicator hidden_wrap">
+      <!-- 1. href, id를 이용하여 페이지 연결
+        1. focus 처리를 통해 hover했을때 해당 배너 표시
+        2. focus 처리시 해당 단어가 나타나도록
+        3. 클릭시 해당 배너로 포커스 강제이동
+        4. 접근성 상향 -> 키보드 방향키로 인디케이터 이동처리
+      -->
+      <!-- 2. eq, index  3. data -->
+      <li class="action"><a href="#pr_01"><span>product_01 detail</span></a></li>
+      <li><a href="#pr_02"><span>product_02 detail</span></a></li>
+      <li><a href="#pr_03"><span>product_03 detail</span></a></li>
+      <li><a href="#pr_04"><span>product_04 detail</span></a></li>
+      <li><a href="#pr_05"><span>product_05 detail</span></a></li>
+    </ul>
+    <div class="slide_wrap">
+      <ul>
+        <li class="product_01"><a id="pr_01" href="#">product_001</a></li>
+        <li class="product_02"><a id="pr_02" href="#">product_002</a></li>
+        <li class="product_03"><a id="pr_03" href="#">product_003</a></li>
+        <li class="product_04"><a id="pr_04" href="#">product_004</a></li>
+        <li class="product_05"><a id="pr_05" href="#">product_005</a></li>
+        <!-- data-eq 자유롭게 변형가능 -->
+      </ul>
+    </div>
+  </div>
+
+
+</div>
 
   <!-- script -->
   <script src="../js/base/jquery-3.5.1.js"></script>
   <script src="../js/base/jquery-ui.js"></script>
   <script src="../js/src/ex_02_slideBtnBanner.js"></script>
+  <script src="../js/src/ex_02_slideBtnBanner_2.js"></script>
+  <script src="../js/src/ex_02_slideBtnBanner_3result.js"></script>
+  <!-- <script src="../js/src/ex_02_slideBtnBanner_3.js"></script> -->
 </body>
 </html>

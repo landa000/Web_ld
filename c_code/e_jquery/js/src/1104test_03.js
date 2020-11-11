@@ -75,7 +75,7 @@
     product.stop().animate({'left':slideN * -100+'%'});
     indiLi.eq(slideN).siblings().removeClass('action');
     indiLi.eq(slideN).addClass('action');
-  })
+  });
 
 
 
