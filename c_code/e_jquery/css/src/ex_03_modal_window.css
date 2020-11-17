@@ -1,0 +1,49 @@
+/* ex_03_modal_window.css */
+
+#wrap { width:62.5rem; height:auto; min-height:31.25rem; margin:auto; margin-bottom:50rem;
+  background-color: #eee;}
+
+  .modal_01 { width:90%; height:auto; margin:auto;}
+  .modal_01 ul { width:100%; height:auto; background-color: #fff;}
+  .modal_01 ul li { float:left; width:150px; height:200px; border-radius:0.5rem;
+    border:1px solid #ccc; margin:0.4rem 0.8rem; padding:0.5rem;
+    box-sizing: border-box;
+    background-color: #faffff;}
+  .modal_01 button { position: relative; z-index:1;
+    width: 100%; height: 100%; border-radius:0.1rem;
+    background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;
+    }
+    .modal_01 button span { display: block; position: absolute; bottom: 0; left: 0;
+      width:100%; height:2rem; padding-top:0.3rem; color:#fff;
+      background-color: rgba(33,33,33,0.5);}
+
+  /* .modal_01 ul li:nth-child(1) > button { background-image: url('../../img/1116_modal/juice_small_01.jpg');} */
+  /* .modal_01 ul li:nth-child(2) > button { background-image: url('../../img/1116_modal/juice_small_02.jpg');} */
+  /* .modal_01 ul li:nth-child(3) > button { background-image: url('../../img/1116_modal/juice_small_03.jpg');} */
+  /* .modal_01 ul li:nth-child(4) > button { background-image: url('../../img/1116_modal/juice_small_04.jpg');} */
+  /* .modal_01 ul li:nth-child(5) > button { background-image: url('../../img/1116_modal/juice_small_05.jpg');} */
+
+/* ======================================================================= */
+
+.gallery_box { position:fixed; top:0; left:0; z-index:100;
+  width:100%; height:100%;
+  background-color: rgba(0,0,0,0.3);}
+.gallery_area { position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%);
+  border-radius:0.5rem;
+  width:500px; height:300px; padding:1rem; background-color: #fff;}
+.gallery_area .close { position: absolute; top:-0.7rem; right: -0.7rem; z-index:150; 
+  width:2rem; height:2rem;
+  background-color: #fff; border-radius: 100%;}
+.gallery_area button { width:100%; height:100%; border-radius:100%; box-sizing:border-box;
+  border:0.3rem solid #777; background-color: #fff; font-size:0.8rem;}
+
+.big_img { width:100%; height:100%; overflow:hidden; position: relative;
+  border-bottom-right-radius: 0.5rem; border-bottom-left-radius: 0.5rem;
+  background-position: 50% 50%; background-size: cover;}
+.big_img p { position: absolute; left: 0; bottom: 0;
+  transform:translateY(100%); 
+  width:100%; height:auto; box-sizing: border-box; padding:1rem;
+  background-color:rgba(0,0,0,0.5); color: #fff;
+  border-bottom-right-radius: 0.5rem; border-bottom-left-radius: 0.5rem;}
+
+.big_img p.action{ transform:translateY(0); transition:all 200ms ease;}

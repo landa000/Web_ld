@@ -1,6 +1,7 @@
 
 
 (function($){
+  
   var indiSlide = $('.indicator_horizontal_slide');
   var indicator = indiSlide.find('.indicator');
   var indiLi    = indicator.children('li');
@@ -15,6 +16,7 @@
   var timed     = 500;
 
   slideLiLink.attr({'tabIndex':'-1'});
+  /*
   var typeTest = function(evt){
     // console.log(evt.type);
     // switch(evt){
@@ -31,21 +33,38 @@
       console.log('...')
     }
   };
-
+*/
 // slide_wrap 내부 a focus 기능 강제 비활성화
 
 // indicator 클릭시 ul 이동 -> a에 focus 처리로 변경 'click'->'focus'
 // 클릭기능은 보류
-  indiLi.children('a').on('focus', function(e){// Tab 포커스 먹게하기
+  indiLi.children('a').on('mouseenter focus click', function(e){// Tab 포커스 먹게하기
     e.preventDefault();
 
       var it = $(this);
-      indiSlN = it.parent('li').index();// 한단계 위 부모이므로 단수형
-      slideUl.stop().css({'marginLeft': indiSlN * -100+'%'});
+      indiSlN = it.parent('li').index();// 한단계 위 부모이므로 단수형  
+      indiLi.eq(indiSlN).addClass('action')
+      indiLi.eq(indiSlN).siblings().removeClass('action');
+      // slideUl.stop().css({'marginLeft': indiSlN * -100+'%'});
+      if(e.type === 'focus' || e.type === 'mouseenter'){
+        slideUl.stop().animate({'marginLeft': indiSlN * -100+'%'}, timed/2);
+      }else if(e.type = 'click'){
+        setTimeout(function(){
+          var thatLink = it.attr('href');
+          $(thatLink).attr({'tabIndex':0});
+          // $(thatLink).parent('li').siblings().children('a').attr({'tabIndex': -1});
+          slideLi.eq(indiSlN).siblings().children('a').attr({'tabIndex':-1}); // 선택 외 대상의 탭인덱스 -1
+          $(thatLink).focus();//링크로 찾아가 포커스를 걸어라
+        },timed + 4)
+      }
+  });// indiLi.children('a').on('focus') end  
 
-  });// indiLi.children('a').on('focus') end
+  slideLi.find('a').on('blur',function(){
+    $(this).attr({'tabIndex':-1});
+  })
 
-  // click
+  // click 
+  /*
   indiLi.on('click', function(e){
     e.preventDefault();
 
@@ -62,8 +81,9 @@
 
     thatPosition.attr({'tabIndex':'0'});
     thatPosition.focus();
-  });
-
+  }); 
+  */
+ 
 
     // indiLi.on('click', function(e){// Tab 포커스 먹게하기
 //   e.preventDefault();

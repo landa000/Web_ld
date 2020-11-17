@@ -66,7 +66,6 @@
         1. focus 처리를 통해 hover했을때 해당 배너 표시
         2. focus 처리시 해당 단어가 나타나도록
         3. 클릭시 해당 배너로 포커스 강제이동
-        4. 접근성 상향 -> 키보드 방향키로 인디케이터 이동처리
       -->
       <!-- 2. eq, index  3. data -->
       <li class="action"><a href="#pr_01"><span>product_01 detail</span></a></li>
@@ -88,6 +87,29 @@
   </div>
 
 
+    <!-- ============================================================= -->
+
+    <div class="part indicator_fade_slide">
+      <h2>인디케이터 fade 슬라이드 배너</h2>
+      <ul class="indicator hidden_wrap">
+        <li class="action"><a href="#pr_01"><span>product_01 detail</span></a></li>
+        <li><a href="#pr_02"><span>product_02 detail</span></a></li>
+        <li><a href="#pr_03"><span>product_03 detail</span></a></li>
+        <li><a href="#pr_04"><span>product_04 detail</span></a></li>
+        <li><a href="#pr_05"><span>product_05 detail</span></a></li>
+      </ul>
+      <div class="slide_wrap">
+        <ul>
+          <li class="action product_01"><a id="pr_01" href="#">product_001</a></li>
+          <li class="product_02"><a id="pr_02" href="#">product_002</a></li>
+          <li class="product_03"><a id="pr_03" href="#">product_003</a></li>
+          <li class="product_04"><a id="pr_04" href="#">product_004</a></li>
+          <li class="product_05"><a id="pr_05" href="#">product_005</a></li>
+        </ul>
+      </div>
+    </div>
+  
+
 </div>
 
   <!-- script -->
@@ -96,6 +118,7 @@
   <script src="../js/src/ex_02_slideBtnBanner.js"></script>
   <script src="../js/src/ex_02_slideBtnBanner_2.js"></script>
   <script src="../js/src/ex_02_slideBtnBanner_3result.js"></script>
+  <script src="../js/src/ex_02_slideBtnBanner_4.js"></script>
   <!-- <script src="../js/src/ex_02_slideBtnBanner_3.js"></script> -->
 </body>
 </html>
