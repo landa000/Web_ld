@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- ex_04_onepagescroll.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/ex_04_onepagescroll.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <div class="popup_dp">
+      <h2>pop-up</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem odit provident aperiam omnis nobis aliquid, dolorem impedit expedita natus ut.</p>
+      <div class="close">
+        <button type="button">close</button>
+      </div>
+    </div>
+    
+    <header id="headBox">
+      <h1><a href="./content.html">jQuery</a></h1>
+      <nav id="navBox">
+        <h2></h2>
+        <ul>
+          <li><a href="#wrap">home</a></li>
+          <li><a href="#viewBox">advertise</a></li>
+          <li><a href="#conBox_01">article01</a></li>
+          <li><a href="#conBox_02">article02</a></li>
+          <li><a href="#footBox">footer</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="viewBox">
+      <h2>advertise</h2>
+    </section>
+    <article id="conBox_01">
+      <h2>article01</h2>
+    </article>
+    <article id="conBox_02">
+      <h2>article02</h2>
+    </article>
+    <div class="top_move_btn">
+      <a href="#wrap">move to top</a>
+    </div>
+    <footer id="footBox">
+      <h2>company infomation</h2>
+    </footer>
+  </div>
+  <!-- script -->
+  <script src="../js/base/jquery-3.5.1.js"></script>
+  <script src="../js/base/jquery-ui.js"></script>
+  <script src="../js/src/ex_04_onepagescroll.js"></script>
+</body>
+</html>

@@ -13,7 +13,7 @@ header,nav,section,article,footer,aside,main,figure,figcaption
  { margin: 0; padding: 0; border: 0; outline: 0; }
 
 ul,ol,li { list-style:none; }
-table,thead,tbody,tfoot,th,td { border: 1px solid #000; boader-spacing:0; border-collapse:collapse;}
+table,thead,tbody,tfoot,th,td { border: 1px solid #000; border-spacing:0; border-collapse:collapse;}
 
 header,nav,section,article,footer,aside,main,figure,figcaption { display:block;}
 
