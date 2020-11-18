@@ -34,29 +34,12 @@
       topBtn.stop().fadeOut();
     }
 
-    (winSt >= 500) ? topBtn.stop().fadeIn() : topBtn.stop().fadeOut(); // (해당 조건) ?참/거짓 질문 참일시 시행 : 거짓일시 실행
+    // (winSt >= 200) ? topBtn.stop().fadeIn() : topBtn.stop().fadeOut(); // (해당 조건) ?참/거짓 질문 참일시 시행 : 거짓일시 실행
   });
 
-  topBtn.on('click',function(e){
-    e.preventDefault();
-    var it = $(this).find('a');
-    
-    var itAttr = it.attr('href');// a요소의 링크 파악
+  // 스크롤 이동 버튼 ===================================================
 
-    var itOffset = $(itAttr).offset().top;
-
-    $('html, body').animate({scrollTop : itOffset});
-    // $('html, body').animate({scrollTop : 0}); - 단독사용가능
-  });
-
-// 2.
-    var popupDp = $('.popup_dp');
-    var popupBtn = popupDp.find('button');
-    popupBtn.on('click',function(e){
-      popupDp.remove();
-    });
-
-    navBtn.on('click', function(e){
+  var scrollMove = function(e){
     e.preventDefault();
     var it = $(this).find('a');
     
@@ -64,8 +47,66 @@
 
     var itOffset = $(itAttr).offset().top;
 
-    $('html, body').animate({ scrollTop : itOffset });
-  });
+    $('html, body').animate({ scrollTop : itOffset })
+  };
 
+  topBtn.on('click', scrollMove);
+  navBtn.on('click', scrollMove);
 
+  // $.each(배열, 함수(요소 순서, 순서에 맞는 배열요소각각){}); 
+  // 선택자.forEach(function(배열 요소 각각, 해당배열요소 순서){}); - javascript
+
+  // var btnColle = [topBtn, navBtn]; 후 배열 이름을 대신 삽입가능
+  // $.each([topBtn, navBtn], function(){
+  //   navBtn.on('click',[a], scrollMove)
+  // }); // git 보고 수정
+
+// 2.
+    var popupDp = $('.popup_dp');
+    var popupBtn = popupDp.find('button');
+    popupBtn.on('click',function(e){
+      e.preventDefault();
+      popupDp.remove();
+    });
+
+// ======================================================
+
+    // var tabmenuBox = $('#conBox_01');
+    // var tabmenuLi = tabmenuBox.find('li');
+    // var tabmenuConBox = tabmenuBox.find('.tab_content');
+    // var tabmenuCon = tabmenuConBox.children('div');
+
+    var tabmenuLi = $('.tab_li li');
+    var tabmenuCon  = $('.tab_content div');
+
+    tabmenuLi.on('click',function(e){
+      e.preventDefault();
+
+      var it = $(this)
+      var itI= it.index();
+      
+      tabmenuCon.eq(itI).show();
+      tabmenuCon.eq(itI).siblings().hide();
+    });
+
+    // var tabmenu02dl = $('.title_tab_style dl');
+    // var tabmenu02btn = tabmenu02dl.find('dt');
+    // var tabmenu02dd  = tabmenu02dl.find('dd');
+
+    var titleTab = $('.title_tab_style');
+    var titleTabDl = titleTab.children('dl');
+    var titleTabDt = titleTabDl.children('dt');
+    var titleTabDd = titleTabDl.children('dd');
+
+    titleTabDt.on('click',['a'],function(e){
+      e.preventDefault();
+
+      var it = $(this);
+      titleTabDd.hide();
+      it.next('dd').show();
+
+      it.siblings('dt').removeClass('action');
+      it.addClass('action');
+
+    });
 })(jQuery);
