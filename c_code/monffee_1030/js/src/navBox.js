@@ -60,14 +60,14 @@
     tNav = navBox[i].titleNav;
     // navDt.append('<a href="'+ tNav.tlink +'"target="'+ tNav.target + '">' + tNav.tname  +'</a>'); //ie까지 호환
     navDt.append(`<a href="${tNav.tlink}"${tNav.target}>${tNav.tname}</a>`); //ES6
-    subNavLen=navBox[i].subNav.length;
 
+    subNavLen=navBox[i].subNav.length;
     for( j=0 ; j<subNavLen ;j+=1){
       navDd = navBoxSelUl.children('li').eq(i).find('dd');
       sNav = navBox[i].subNav[j];
       navDd.append('<a href="'+ sNav.slink +'">' + sNav.subname +'</a>');
     }
-  }
+  };
   // =============================================================
   var navBoxFindDt = navBoxSel.find('dt');
   var navBoxFindDtLink = navBoxFindDt.find('a');
