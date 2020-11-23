@@ -1,0 +1,56 @@
+/* ex_06_rwd_menu.css */
+
+#wrap { width:100%; height:auto; min-height:800px;
+  padding:1rem; box-sizing: border-box;
+  background-color: #fffdfe;}
+
+#headBox { width:100%; height:100px;
+  background-color: #7cd;}
+  h1 { float:left; width:100px; height:100%; background-color: #89c;}
+
+#navBox { float:right;}
+
+
+/* .gnb { position:fixed; top:0; right:0;  display: none;
+  padding:3rem 2rem; color:#fff; box-sizing: border-box;
+  font-size:2rem;
+  width:100%; height:100%; background-color: rgba(33,33,33,0.5);} */
+
+
+
+@media screen and (max-width:1023px){
+  #navBox { width:60px; height:60px; margin-top:20px;}
+  .menu_btn { position:relative; z-index:500;}
+  .menu_btn, .menu_btn > button { width:100%; height:100%; background-color: #fba;}
+
+  .menu_btn i { display:block; 
+    position:absolute; left:50%; margin-left:-50%; top:47%;
+    border-radius:50px; opacity:1; transition:all 450ms ease;
+    width:100%; height:4px; background-color:#333;}
+
+    /* .line_01 { transform:translate(-20px);} */
+    .line_02 { transform:translateY(-20px);}
+    .line_03 { transform:translateY(20px);}
+
+    .menu_btn.on .line_01 { opacity:0;}
+    .menu_btn.on .line_02 { transform:translateY(0) scaleX(1.3) rotate(414deg);}
+    .menu_btn.on .line_03 { transform:translateY(0) scaleX(1.3) rotate(-414deg);}
+
+  .gnb { display:none; position:fixed; top:0; right:0; display: none;
+    padding:3rem 2rem; color:#fff; box-sizing: border-box; font-size:2rem;
+    width:100%; height:100%; background-color: rgba(33,33,33,0.5);}
+    
+  .gnb li { width:80%; height:auto; margin-bottom: 1.2rem; border-bottom:1px solid #ddd;}
+  .gnb a { display: block; width:100%; padding:0 5rem;}
+
+}/* @media screen and (max-width:1279px) */
+
+@media screen and (min-width:1024px){
+  #navBox { width:600px; height:50px; margin-top:40px;}
+    .menu_btn { display: none;}
+
+  .gnb { display: block; position:static}
+  .gnb li { float:left; width:auto; height:100%; margin-left:1rem; border:0; padding:0;}
+  .gnb li:first-child { margin-left:0;}
+  .gnb li a { padding:0.5rem 1rem; background-color: #fff;}
+}/* @media screen and (min-width:1280px) */

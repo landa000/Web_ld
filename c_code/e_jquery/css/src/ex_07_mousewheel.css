@@ -1,0 +1,21 @@
+#wrap { position:relative; width:100%; height:auto;
+  text-align: center;}
+
+#headBox { position:absolute; left:0; right:0; top:0; margin:auto;
+  width:80%; height:40px;
+  background-color: #ffe;}
+
+#viewBox { width:100%; height:100vh;
+  background-color: #cf0;}
+
+#conBox_01 { width:100%; height:100vh;
+  background-color: #9f2;}
+
+#conBox_02 { width:100%; height:100vh;
+  background-color: #6f5;}
+
+#conBox_03 { width:100%; height:100vh;
+  background-color: #3f9;}
+
+#footBox { width:100%; height:300px;
+  background-color: #0fc;}

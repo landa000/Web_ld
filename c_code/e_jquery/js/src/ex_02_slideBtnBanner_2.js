@@ -25,7 +25,7 @@
         break;
       }// if end
     }
-    // console.log( actionIndex );
+    console.log(actionIndex);
     return actionIndex; // 함수 말미에 꼭 필요
   };
 // =========================================
@@ -57,7 +57,6 @@
             indexN = 0; // 0,1,2,3,4만 존재하기 때문에 숫자를 조정함
           }
           SlideAction();
-
       }else if( it === 'prev_btn'){
         indexN -= 1;
         SlideAction();

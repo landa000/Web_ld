@@ -56,7 +56,7 @@ var deviceSize = function(){
         myType = deviceType[deviceType.length-1].type;
       }
     }
-    console.log(myType);
+    // console.log(myType);
     return myType;
   }
 
