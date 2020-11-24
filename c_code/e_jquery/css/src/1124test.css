@@ -7,7 +7,7 @@
   width:100%; min-width:960px; max-width:1600px; height:90px; margin:auto;
   background-color: rgba(85,85,85,0.5);}
 
-  #headBox h1 {float:left; width: 140px; height:60px; 
+  #headBox h1 {float:left; width: 140px; height:60px; margin-top:10px; 
     background-color: #fff;}
   #headBox ul { float:right; width:60%; height:100%; margin-top:10px;}
   #headBox li { float:left; width: 15%; height:80%; margin-left:5%;}
@@ -15,15 +15,23 @@
     font-size:2rem; text-align:center; line-height:60px; color:#fff;}
 
 #viewBox { position:relative; width:100vw; height:100vh;
-  background-color: #aab;}
+  }
+
 .view_indi { position:absolute; bottom:30px; right:5%;
-  width:200px; height:34px;
+  width:240px; height:34px; border-radius:17px;
   padding:5px; box-sizing:border-box;
   background-color: #555;}
-.view_indi > li, .view_indi > button { float:left; width:24px; height:24px; border-radius:12px;
+.view_indi > li, .view_indi > button { float:left; width:24px; height:24px; 
+  border-radius:12px;  margin-right:5px;
   background-color: #fff;}
   .view_indi > button { float:right;}
+  .view_indi > button.action { background-color: #ff0;}
+  .view_indi > .next_btn { margin:0;}
 
+.view_area { width:500%; height:100%;}
+.view_area li { float:left; width:20%; height:100%;
+  background-repeat: no-repeat; background-size: contain;
+  background-position: 50% 50%;}
 
 #scrollBox { width:960px; height:600px; margin:auto;
   background-color: #cbb;}
