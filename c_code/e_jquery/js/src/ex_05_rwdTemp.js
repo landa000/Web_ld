@@ -75,5 +75,5 @@ var deviceSize = function(){
   });
   return resultDevice;
   })(jQuery);
-  return resultDevice;
+    return resultDevice;
 };
