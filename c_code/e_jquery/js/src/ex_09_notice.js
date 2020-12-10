@@ -8,7 +8,7 @@
       context: document.body
     }).done(function(data){
 
-      var myViewLen = 60;
+      var myViewLen = 25;
 
       var dataFile;
       dataFile = data.sort(function(a,b){ //sort => 정렬
@@ -39,6 +39,43 @@
         indiLi.find('a').text(indiN+1);
       }
 
+      // 인디케이터 노출 갯수 조정
+      var indiViewLen = 5; // 표시갯수
+      var iv = 0;
+      var memoryN;
+
+      indiLi = indiUl.children('li');
+
+      // for(; iv < indiLen; iv+=1){
+      //   if(iv < indiViewLen){
+      //     memoryN = iv+1; // for문 반복실행에 앞서 이전 숫자를 기억하기 위한 변수 (5까지 로딩됐을경우 다음엔 6~10 로딩)
+      //     continue; // indiViewLen 이하인 iv+1번째 li의 경우 패스
+      //   }else{
+      //     indiLi.eq(iv).hide();  // 위에서 선택되지 않은 li 전부 hide처리
+      //   }
+      // }
+
+      for(; iv < indiLen; iv+=1){
+        if(iv >= indiViewLen){
+          indiLi.eq(iv).hide();
+        }else{
+          memoryN=iv+1;
+        }
+      }// 상단 for문과 같은 내용(서순차이)
+
+      var nBtn = $('.next_notice');
+      var pBtn = $('.prev_notice');
+
+      nBtn.on('click',function(e){
+        e.preventDefault();
+        var nbn = memoryN; // 함수가 동작했을때 상단의 memoryN값을 가져옴
+        indiLi.hide();
+        for(;nbn< memoryN+indiViewLen ;nbn+=1){
+          indiLi.eq(nbn).show();
+        }
+        memoryN = nbn; // nbn값을 다시 memoryN으로 만듦(5->10->15...)
+      });
+
       // 내용 넣기
       var reSetting = function(n){
         var i = 0;
@@ -55,7 +92,6 @@
             noticeLi.find('em').text(dataFile[i+k].id)
             noticeLi.find('span').text(dataFile[i+k].address)
           }
-
         }
       }
 
