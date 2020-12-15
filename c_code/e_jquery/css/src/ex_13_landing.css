@@ -1,0 +1,34 @@
+/* ex_13_landing.css */
+
+#wrap { width:100%; height:auto; min-height:2000px;
+  box-sizing: border-box; padding:0 1rem; background-color: #e2e1e8;}
+
+#headBox { position:fixed; top:1rem; left: 1rem; z-index:100;
+  width: 9.375rem; height:3rem; background-color: #fff;}
+
+  h2 { width:300px; height:3rem; background-color: #fff; text-align: center; margin:auto;
+    opacity: 0; transition: all 350ms ease; }
+  .action > h2 { opacity:1;}
+
+#viewBox { width:100%; height:100vh; min-height:40rem;  background-color: #212170;}
+
+#conBox { width:100%; height:100rem; 
+  background-repeat: no-repeat; background-position: 50% 0; background-size: 120%;
+  background-attachment: fixed;
+  background-image: url("../../img/1210_zoom/zoom_04_big.jpg");}
+  #conBox h2 { transform:translateY(-5rem);}
+  .content_area { width: 60%; height:400px; margin:50px auto; opacity:0;
+    transform:translate(5rem); transition: all 600ms ease 300ms; 
+    background-color: #fffffa; }
+  .action > .content_area { opacity:1; transform:translate(0);}
+
+#moreBox { width:80%; max-width:100rem; min-width:60rem; height:77rem;
+  margin:auto; background-color: #cab020;
+  transition: all 550ms ease;}
+  #moreBox h2 { opacity: 1; transform:translateX(-50rem) rotateZ(-720deg);}
+
+  #wrap .action > h2 { opacity:1; transform:translate(0) rotateZ(0);}
+  #moreBox.more > h2 { opacity:1; position:fixed; top:0; left:0; right:0; margin:auto;}
+  #moreBox.more      { background-color: #8ac0b9;}
+
+#footBox { width:100%; height:5rem; background-color: #525158;}
