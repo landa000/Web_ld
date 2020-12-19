@@ -82,7 +82,7 @@
     tabmenuLi.on('click',function(e){
       e.preventDefault();
 
-      var it = $(this)
+      var it = $(this);
       var itI= it.index();
       
       tabmenuCon.eq(itI).show();
@@ -107,6 +107,5 @@
 
       it.siblings('dt').removeClass('action');
       it.addClass('action');
-
     });
 })(jQuery);

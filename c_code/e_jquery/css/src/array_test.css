@@ -1,0 +1,10 @@
+#wrap { width: 100%; height:auto; min-height:300px;}
+
+.Area { width:80%; height:auto; min-height:500px; min-width:800px;
+  margin:auto;
+  background-color: #121118;}
+
+.Area ul { width:90%; height:auto;}
+.Area ul li { float:left; margin:4px; width:150px; height:150px;
+  background-color: #fff;}
+.Area ul li a { width:100%; height:100%; }

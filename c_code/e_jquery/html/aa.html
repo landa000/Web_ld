@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>json 데이타를 jQuery에서 읽어오는 예제</title>
+
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+
+<body>
+
+<script>
+
+var obj = { one: 1, two: 2, three: 3, four: 4, five: 5 };
+
+$.each(obj,function(key,value) {
+
+	alert('key:'+key+', value:'+value);
+
+});
+
+
+
+//여러개의 데이타가 있을경우
+
+var obj2 = [{ name: "홍길동", age: "20" },{ name: "이순신", age: "30" }];
+
+$.each(obj2,function(key,value) {
+
+	alert('key:'+key+', name:'+value.name+',age:'+value.age);
+
+});
+
+</script>
+
+</body>
+
+</html>
