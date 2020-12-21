@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- ex_14_parallax.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/ex_14_parallax.css">
+  <title>Parallax_firewatch</title>
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <header id="headBox">
+      <h1><a href="./content.html">jQuery - firewatch game</a></h1>
+      <nav id="navBox">
+        <h2 class="hidden_context">global navigation</h2>
+        <ul>
+          <li><a href="#">firewatch</a></li>
+          <li><a href="#">development blog</a></li>
+          <li><a href="#">campo store</a></li>
+          <li><a href="#">quarterly review</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <article id="viewBox">
+      <h2 class="hidden_context">firewatch</h2>
+      <p class="hidden_context">firewatch game context</p>
+      <!-- 이미지 배치 -->
+      <div class="view_01"></div>
+      <div class="view_02"></div>
+      <div class="view_03"></div>
+      <div class="view_04"></div>
+      <div class="view_05"></div>
+      <div class="view_06"></div>
+      <div class="view_07"></div>
+      <div class="view_08"></div>
+      <div class="view_09"></div>
+    </article>
+    <article id="gameNarrBox">
+      <div class="no_data"></div>
+    </article>
+    <article id="sampleBox">
+      <h2 class="hidden_context">game demo image</h2>
+      <ul class="hidden_wrap clearfix">
+        <li><a href="#"><span>game screenshot_01</span></a></li>
+        <li><a href="#"><span>game screenshot_02</span></a></li>
+        <li><a href="#"><span>game screenshot_03</span></a></li>
+        <li><a href="#"><span>game screenshot_04</span></a></li>
+      </ul>
+    </article>
+    <footer id="footBox">
+      <h2 class="hidden_context">game infomation</h2>
+      <p>©2020 campo santo, in cooperation with panic.<br />
+        firewatch is a trademark of campo santo.<br />
+        nintendo switch is a trademark of nintendo.</p>
+    </footer>
+  </div>
+
+  <!-- script -->
+  <script src="../js/base/jquery-3.5.1.js"></script>
+  <script src="../js/base/jquery-ui.js"></script>
+  <script src="../js/src/ex_14_parallax.js"></script>
+</body>
+</html>
