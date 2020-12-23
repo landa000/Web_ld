@@ -1,0 +1,34 @@
+/* ex_15_parallax02.css */
+
+#wrap { width:100%; min-width:80rem;  height:auto; min-height:187.5rem; 
+  background-color:#c5ad93;}
+
+#headBox { position:fixed; left:0; top:0;
+  width:100%; height:100vh; min-height:37.5rem; z-index:1000;
+  background-image: url("../../img/1222/chad-madden_skybg.jpg");
+  background-position: 50% 50%;}
+  h1 { position: absolute; top:0; left:0; right:0; bottom:0; margin:auto; z-index:100;
+    width: 500px; height: 300px;}
+  h1 a { background-image: url(../../img/1222/logo.svg); 
+    background-position: 50% 50%;  }
+    #headBox.default::before { content:" "; display: block; 
+      position: absolute; top:0; bottom: 0; z-index:500; width:100%; height:100%; }
+
+.image_area { position: absolute; top:0; left:0;  width:100%; height:100%;}
+  .image_area div { position:absolute; top:0; left:0; width:100%; height:100%;
+    background-repeat: no-repeat; background-size: cover; }
+
+.front_img { z-index:10; background-image: url("../../img/1222/building.png");  
+  background-position: 50% 50%; background-size: cover;}
+.back_img { z-index:5; background-image: url("../../img/1222/airplane.png");
+  background-position: 50% -40%;}
+
+.blink_area { width: 100%; height:2800px;}
+
+#subNavBox { widows: 100%; max-width:1600px; height:auto; min-height:500px;
+  margin:auto; background-color: #fda;}
+
+#contentBox { width:100%; height:1500px; margin:auto;
+  background-color: #ccc;}
+
+ #footBox { width:100%; height:700px; background-color:#555;} 

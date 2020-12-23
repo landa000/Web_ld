@@ -92,3 +92,5 @@ for( ; n<arr_li_Len ;n+=1){
   li.innerHTML='<span>'+(n+1)+'<span>';
   nav.append(li)}
 }
+
+console.log(arr_li[2]);

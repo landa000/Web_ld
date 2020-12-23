@@ -1,0 +1,25 @@
+/* ex_16_card.css */
+
+#wrap { width:100%; min-width:37.5rem; height:auto; min-height:125rem; 
+  margin:auto; padding-top:100px;}
+
+#headBox { position:fixed; top:0; left:0; width:100%; height:70px; z-index:1000;
+  background-color: #fff; box-shadow:0 0.2rem 0.1rem rgba(0,0,0,0.3);}
+
+#cardBox { width:100%; height:auto;}
+#cardBox ul { width:94%; height:auto; margin:auto;}
+  #cardBox ul::after, #cardBox ul:after {
+    content:" "; display:block; clear: both; width:100%; height:0; }
+
+#cardBox ul li { float:left; width:240px; height:380px; margin: 0 20px 25px 0; 
+  padding:0.4rem; box-sizing: border-box; background-color: #fff;
+  border-radius: 0.5rem; border:1px solid #c2c1c8;  overflow: hidden;}
+  /* inline-block 강제로 중앙정렬되는 문제가 있음, 세로값 */
+
+#cardBox a { display:block; width:100%; height:100%;}
+  #cardBox a > span { margin-top:1rem; display: block; width:90%; font-weight: bold;}
+
+.img_temp { position:relative; width:100%; height:320px; overflow: hidden; border-radius: 0.3rem;}
+  .img_temp > img { position:absolute; top:50%; left:50%; 
+    width:auto; height:auto; min-width:100%; min-height:100%;
+    transform:translate(-50%,-50%);}
