@@ -1,0 +1,28 @@
+/* ex_18_card02.css */
+
+#wrap { width:100%; height:auto; margin:auto; padding-top:3rem;}
+
+#headBox { position:fixed; top:0; left:0; z-index:1500;
+  width:100%; height:3.5rem; background-color: #fff;
+  box-shadow: 0 0 0.2rem rgba(0,0,0,0.7);}
+  h1 { width:90%; height:auto; padding-top: 0.2rem;
+    text-align: center; font-size: 2rem;}
+
+#cardBox { width:96%; height:auto; min-height:500px; margin:auto;}
+  #cardBox h2 { width:100%; height:auto; padding:0.5rem 0; 
+    margin-bottom:1rem; text-indent:2rem; border-bottom: 1px solid #777;
+  }
+
+.card_area { position:relative;
+  width:100%; height:auto; min-height:500px; margin:auto;}
+
+.card { position:absolute; cursor:zoom-in;
+  width: 13rem; height:auto; min-height:8rem;
+  padding: 0.5rem; padding-bottom:1rem; border:1px solid #727178; 
+  background-color: #fff;}
+  .card > .card_img { width:100%; height:calc(100% - 70px);
+    border-radius: 1rem;  background-color: #ffa; background-position: 50% 50%;
+    background-repeat: no-repeat; background-size: cover;}
+  .card dl { width:100%; height:65px; padding-top: 5px;}
+  .card dt { font-size:1.05rem; font-weight: bold; text-transform: uppercase;}
+  .card dd { color: #525158;}

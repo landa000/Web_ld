@@ -70,11 +70,23 @@
         e.preventDefault();
         var nbn = memoryN; // 함수가 동작했을때 상단의 memoryN값을 가져옴
         indiLi.hide();
-        for(;nbn< memoryN+indiViewLen ;nbn+=1){
+        for(; nbn< memoryN+indiViewLen ;nbn+=1){
           indiLi.eq(nbn).show();
         }
         memoryN = nbn; // nbn값을 다시 memoryN으로 만듦(5->10->15...)
+        console.log(nbn);
       });
+
+      // pBtn.on('click',function(e){
+      //   e.preventDefault();
+      //   // var nbn = memoryN; // 함수가 동작했을때 상단의 memoryN값을 가져옴
+      //   indiLi.hide();
+      //   for(; nbn <= memoryN+indiViewLen ;nbn-=1){
+      //     indiLi.eq(nbn).show();
+      //   }
+      //   nbn = memoryN ; // nbn값을 다시 memoryN으로 만듦(5->10->15...)
+      //   console.log(nbn);
+      // });
 
       // 내용 넣기
       var reSetting = function(n){
